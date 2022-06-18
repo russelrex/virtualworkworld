@@ -1,0 +1,49 @@
+.job-nav {
+  background-color: #c797eb;
+}
+
+.job-title-desc {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.job-title {
+  color: white;
+}
+
+.job-apply-btn {
+  background-color: #32a532;
+  height: 60px;
+  width: 20%;
+  border-radius: 100px;
+}
+
+.job-header {
+  margin-top: -3rem;
+  border: 1px solid;
+  border-radius: 20px;
+  height: 120px;
+  width: 60%;
+  position: relative;
+  background-color: white;
+  box-shadow: -5px 11px #a5a1a1;
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.job-overview {
+  margin-top: -3rem;
+  border: 1px solid;
+  width: 60%;
+  position: relative;
+  background-color: white;
+  text-align: justify;
+}

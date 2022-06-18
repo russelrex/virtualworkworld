@@ -1,0 +1,158 @@
+ul li {
+  border: none;
+}
+
+.mr-neg-80 {
+  margin-right: -80%;
+}
+
+i.fas {
+  color: black;
+}
+.bg-custom {
+  background-color: #f0ecfc;
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+}
+
+.work {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button.work.cust {
+	background-color: blue;
+}
+
+button.work.freel{
+	background-color: yellow;
+}
+
+button.work.freel span{
+	color: black;
+}
+
+button.work {
+	width: 300px;
+	height: 100px;
+	cursor: pointer;
+	border: 0px solid #5b3f69;
+	background: #34283b;
+	transition: 200ms;
+  border-radius: 15px;
+}
+
+button.work span {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 30px;
+	color: #f0ecfc;
+	transition: 500ms;
+}
+
+button.work::before, button.work::after {
+	content: '';
+	position: absolute;
+	margin-left: -75px;
+	margin-top: -25px;
+	width: 140px;
+	height: 40px;
+	z-index: -1;
+}
+
+button.work::before {
+	border: 5px solid #7e5791;
+	transition: 200ms;
+}
+
+button.work::after {
+	border: 5px solid #b37ccf;
+	transition: 500ms;
+}
+
+button.work:hover {
+	border: 5px solid #5b3f69;
+}
+
+button.work:hover span {
+	letter-spacing: 4px;
+	font-size: 20px;
+}
+
+button.work:hover::before {
+	width: 150px;
+	height: 50px;
+	margin-left: -80px;
+	margin-top: -30px;
+}
+
+button.work:hover::after {
+	width: 160px;
+	height: 60px;
+	margin-left: -85px;
+	margin-top: -35px;
+}
+
+button.work:focus {
+	outline: none;
+}
+
+.example1 {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+ }
+ .example1 h3 {
+  font-size: 3em;
+  color: limegreen;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes example1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+
+.banner .col img {
+  width: 20%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.list-group {
+  --bs-list-group-bg:  none;
+}
