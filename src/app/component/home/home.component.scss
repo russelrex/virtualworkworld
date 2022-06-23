@@ -28,8 +28,21 @@ button.work.cust {
 	background-color: blue;
 }
 
+.responsive-width {
+  font-size: 3vw;
+}
+
 button.work.freel{
 	background-color: yellow;
+}
+
+@media (min-width:801px) and (min-width:1025px) and (min-width:1281px)  {
+  button.work.cust {
+    width: 70%;
+  }
+  button.work.freel{
+    width: 70%;
+  }
 }
 
 button.work.freel span{
@@ -155,4 +168,8 @@ button.work:focus {
 
 .list-group {
   --bs-list-group-bg:  none;
+}
+
+.nav-title {
+  font-weight: bolder;
 }
