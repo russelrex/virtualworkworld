@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountingComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

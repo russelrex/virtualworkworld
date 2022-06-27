@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* 
+**
+  JOBS
+**
+*/
+
+.job-nav {
+  background-color: #c797eb;
+  height: 250px;
+}
+
+.job-title-desc {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.job-title {
+  color: #0A175C;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.job-apply-btn {
+  height: 60px;
+  width: 20%;
+  border-radius: 100px;
+}
+
+.job-header {
+  border: 1px solid;
+  border-radius: 20px;
+  height: 120px;
+  position: relative;
+  background-color: #ececec;
+  box-shadow: -5px 11px #a5a1a1;
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.job-overview {
+  margin-top: -3rem;
+  border: 1px solid;
+  width: 60%;
+  position: relative;
+  background-color: #ececec;
+  text-align: justify;
+}
+
+.job-opening{
+  margin-top: -3rem;
+  border: 1px solid;
+  width: 60%;
+  position: relative;
+  background-color: #ececec;
+  text-align: justify;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.job-summary {
+  color: #0A175C;
+}
+
+form div label span {
+  color: red;
+}
+
+.btn-apply {
+  background-color: #0A175C;
+  color: white;
+  height: 60px;
+  border-radius: 100px;
+  width: 100%;
+}
+
+/* 
+**
+  JOBS
+**
+*/

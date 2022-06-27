@@ -1,49 +1,72 @@
-.job-nav {
-  background-color: #c797eb;
-}
+// .job-nav {
+//   background-color: #c797eb;
+//   height: 250px;
+// }
 
-.job-title-desc {
-  margin-top: 8rem;
-  margin-bottom: 5rem;
-  justify-content: center;
-}
+// .job-title-desc {
+//   margin-top: 8rem;
+//   margin-bottom: 5rem;
+//   justify-content: center;
+// }
 
-.job-title {
+// .job-title {
+//   color: #0A175C;
+//   font-size: 60px;
+//   font-weight: bolder;
+// }
+
+// .job-apply-btn {
+//   background-color: #32a532;
+//   height: 60px;
+//   width: 20%;
+//   border-radius: 100px;
+// }
+
+// .job-header {
+//   margin-top: -3rem;
+//   border: 1px solid;
+//   border-radius: 20px;
+//   height: 120px;
+//   width: 60%;
+//   position: relative;
+//   background-color: white;
+//   box-shadow: -5px 11px #a5a1a1;
+//   position: relative;
+// }
+
+// .vertical-center {
+//   margin: 0;
+//   position: absolute;
+//   top: 50%;
+//   -ms-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
+
+// .job-overview {
+//   margin-top: -3rem;
+//   border: 1px solid;
+//   width: 60%;
+//   position: relative;
+//   background-color: #ececec;
+//   text-align: justify;
+// }
+
+// .job-opening{
+//   margin-top: -3rem;
+//   border: 1px solid;
+//   width: 60%;
+//   position: relative;
+//   background-color: #ececec;
+//   text-align: justify;
+//   border: none;
+//   border-radius: 30px;
+//   padding: 10px;
+// }
+
+.btn-apply {
+  background-color: #0A175C;
   color: white;
-}
-
-.job-apply-btn {
-  background-color: #32a532;
   height: 60px;
-  width: 20%;
   border-radius: 100px;
-}
-
-.job-header {
-  margin-top: -3rem;
-  border: 1px solid;
-  border-radius: 20px;
-  height: 120px;
-  width: 60%;
-  position: relative;
-  background-color: white;
-  box-shadow: -5px 11px #a5a1a1;
-  position: relative;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.job-overview {
-  margin-top: -3rem;
-  border: 1px solid;
-  width: 60%;
-  position: relative;
-  background-color: white;
-  text-align: justify;
+  width: 100%;
 }

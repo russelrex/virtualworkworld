@@ -5,6 +5,9 @@ import { CorporateComponent } from './component/corporate/corporate.component';
 import { HomeComponent } from './component/home/home.component';
 import { JobsComponent } from './component/jobs/jobs.component';
 import { AccountingComponent } from './component/jobs/accounting/accounting.component';
+import { AccountingOneComponent } from './component/jobs/accounting/accounting-one/accounting-one.component';
+import { AccountingTwoComponent } from './component/jobs/accounting/accounting-two/accounting-two.component';
+import { AccountingThreeComponent } from './component/jobs/accounting/accounting-three/accounting-three.component';
 import { SoftwareComponent } from './component/jobs/software/software.component';
 import { WebComponent } from './component/jobs/web/web.component';
 import { CallCenterComponent } from './component/jobs/call-center/call-center.component';
@@ -33,6 +36,18 @@ const routes: Routes = [
       {
         path: 'accounting',
         component: AccountingComponent,
+      },
+      {
+        path: 'accounting/1',
+        component: AccountingOneComponent,
+      },
+      {
+        path: 'accounting/2',
+        component: AccountingTwoComponent,
+      },
+      {
+        path: 'accounting/3',
+        component: AccountingThreeComponent,
       },
       {
         path: 'software',

@@ -48,36 +48,55 @@
                   <h2 class="section-heading text-uppercase">About Us</h2>
               </div>
               <div class="row text-center">
-                <div class="container">
+                <!-- <div class="container">
                   <div class="row banner">
                     <div class="col">
                       <ng-marquee speed="drowsy" [stopOnHover]="true">
-                        <img src="../../../assets/img/banner/kendamil.png">
-                        <img src="../../../assets/img/banner/suitespot.webp" style="width: 20%; margin: -20px;">
-                        <img class="m-0" src="../../../assets/img/banner/dunkin.png">
-                        <img src="../../../assets/img/banner/radisson.png">
-                        <img src="../../../assets/img/banner/little.png" style="width: 20%;">
-                        <img src="../../../assets/img/banner/ripple.jpg">
-                        <img src="../../../assets/img/banner/digi.png">
-                        <img class="m-0" src="../../../assets/img/banner/hq.jpeg" style="width: 15%;">
-                        <img src="../../../assets/img/banner/lula.jpg" style="width: 10%;">
-                        <img src="../../../assets/img/banner/strange.png" style="width: 10%;">
-                        <img src="../../../assets/img/banner/mood.jpeg" style="width: 10%;">
-                        <img class="m-0" src="../../../assets/img/banner/buzz.webp">
-                        <img class="m-0" src="../../../assets/img/banner/leze.webp">
+                        <div class="container">
+                          <img src="../../../assets/img/banner/kendamil.png">
+                          <img src="../../../assets/img/banner/suitespot.webp" style="width: 20%; margin: -20px;">
+                          <img class="m-0" src="../../../assets/img/banner/dunkin.png">
+                          <img src="../../../assets/img/banner/radisson.png">
+                          <img src="../../../assets/img/banner/little.png" style="width: 20%;">
+                          <img src="../../../assets/img/banner/ripple.jpg">
+                          <img src="../../../assets/img/banner/digi.png">
+                          <img class="m-0" src="../../../assets/img/banner/hq.jpeg" style="width: 15%;">
+                          <img src="../../../assets/img/banner/lula.jpg" style="width: 10%;">
+                          <img src="../../../assets/img/banner/strange.png" style="width: 10%;">
+                          <img src="../../../assets/img/banner/mood.jpeg" style="width: 10%;">
+                          <img class="m-0" src="../../../assets/img/banner/buzz.webp">
+                          <img class="m-0" src="../../../assets/img/banner/leze.webp">
+                        </div>
                       </ng-marquee>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- <div class="container">
                   <app-my-agm></app-my-agm>
                 </div> -->
+                <div class="marquee">
+                  <ul class="marquee-content">
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/kendamil.png" style="margin-top: 32px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/suitespot.webp"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/dunkin.png" style="margin-top: 18px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/radisson.png" style="margin-top: 35px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/little.png" style="margin-top: 60px;"></li> 
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/ripple.jpg" style="margin-top: 28px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/digi.png" style="margin-top: -18px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/hq.jpeg" style="margin-top: -10px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/buzz.webp" style="margin-top: 50px; margin-left: 10px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/leze.webp" style="margin-top: 30px; margin-left: 10px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/lula.jpg" style="height: 100%; width: 85%; margin-left: 50px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/strange.png" style="height: 100%; width: 85%; margin-left: 35px;"></li>
+                    <li class="marquee-item"><img class="marquee-image" src="../../../assets/img/banner/mood.jpeg" style="height: 100%; width: 85%; margin-left: 10px;"></li>
+                  </ul>
+                </div>  
               </div>
           </div>
       </section>
       <!-- Services-->
       <section class="page-section bg-custom" id="services">
-          <div class="container">
+          <div class="container" data-aos="fade-left" data-aos-delay="200">
               <div class="text-center">
                   <h2 class="section-heading text-uppercase">Services</h2>
                   <h3 class="section-subheading text-muted">Overview of what we can do for you</h3>
@@ -261,7 +280,7 @@
         </section>
         <!-- Portfolio Grid-->
         <section class="page-section" id="jobs">
-            <div class="container">
+            <div class="container" data-aos="zoom-in-right" data-aos-delay="300">
                 <div class="text-center mb-5">
                     <h2 class="section-heading text-uppercase">Jobs</h2>
                 </div>
@@ -403,7 +422,7 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel" data-aos="fade-right" data-aos-delay="300">
                             <div class="timeline-heading">
                                 <h4>Week 1</h4>
                             </div>
@@ -423,7 +442,7 @@
                     </li>
                   <li class="timeline-inverted">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                      <div class="timeline-panel">
+                      <div class="timeline-panel" data-aos="fade-left" data-aos-delay="300">
                         <div class="timeline-heading">
                             <h4>Week 2</h4>
                         </div>
@@ -437,7 +456,7 @@
                   </li>
                   <li>
                       <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                      <div class="timeline-panel">
+                      <div class="timeline-panel" data-aos="fade-right" data-aos-delay="300">
                           <div class="timeline-heading">
                               <h4>Week 3</h4>
                           </div>
@@ -451,7 +470,7 @@
                   </li>
                   <li class="timeline-inverted">
                       <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                      <div class="timeline-panel">
+                      <div class="timeline-panel" data-aos="fade-left" data-aos-delay="300">
                           <div class="timeline-heading">
                               <h4>Week 4</h4>
                           </div>
@@ -472,55 +491,31 @@
           <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">
               <h3 class="mb-4">Testimonials</h3>
-              <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+              <br><br>
+              <!-- <p class="mb-4 pb-2 mb-md-5 pb-md-0">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
                 numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
                 quisquam eum porro a pariatur veniam.
-              </p>
+              </p> -->
             </div>
           </div>
         
           <div class="row text-center">
-            <div class="col-md-4 mb-5 mb-md-0">
+            <div class="col-md-4 mb-5 mb-md-0" 
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <div class="d-flex justify-content-center mb-4">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                <img src="assets/img/testimonials/test01.jpg"
                   class="rounded-circle shadow-1-strong" width="150" height="150" />
               </div>
-              <h5 class="mb-3">Maria Smantha</h5>
-              <h6 class="text-primary mb-3">Web Developer</h6>
+              <h5 class="mb-3">Nazireh Reis</h5>
+              <!-- <h6 class="text-primary mb-3">Web Developer</h6> -->
               <p class="px-xl-3">
-                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                tenetur.
-              </p>
-              <ul class="list-unstyled d-flex justify-content-center mb-0">
-                <li>
-                  <i class="fas fa-star fa-sm text-warning"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-warning"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-warning"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star fa-sm text-warning"></i>
-                </li>
-                <li>
-                  <i class="fas fa-star-half-alt fa-sm text-warning"></i>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-5 mb-md-0">
-              <div class="d-flex justify-content-center mb-4">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                  class="rounded-circle shadow-1-strong" width="150" height="150" />
-              </div>
-              <h5 class="mb-3">Lisa Cudrow</h5>
-              <h6 class="text-primary mb-3">Graphic Designer</h6>
-              <p class="px-xl-3">
-                <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                <i class="fas fa-quote-left pe-2"></i>I would recommend this service 1000%.
+                I just landed a remote work job thanks to the foresight and awesome support of this team. 👏 I had gotten fed up of being stuck in traffic, stressed with zero work/life balance, hours wasted in travelling...solution, remote work!
+                Kudos to Mrs. Jisselle for her selfless service. I'm convinced and won over....here's to a new chapter of me! Follow them and stay up to date and proative with your recruitment. You won't regret it!
+                <i class="fas fa-quote-right pe-2"></i>
               </p>
               <ul class="list-unstyled d-flex justify-content-center mb-0">
                 <li>
@@ -540,16 +535,51 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 mb-0">
+            <div class="col-md-4 mb-5 mb-md-0"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <div class="d-flex justify-content-center mb-4">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                <img src="assets/img/testimonials/test02.jpg"
                   class="rounded-circle shadow-1-strong" width="150" height="150" />
               </div>
-              <h5 class="mb-3">John Smith</h5>
-              <h6 class="text-primary mb-3">Marketing Specialist</h6>
+              <h5 class="mb-3">Wendy Rampersad</h5>
               <p class="px-xl-3">
-                <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
-                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                <i class="fas fa-quote-left pe-2"></i>A dynamic team, both Jisselle and Ashley epitomize professionalism and teamwork and are truly exemplars in the virtual work world.  
+                With their unique, refreshing personal styles in interacting with the client, one is left with a sense of confidence and reassurance towards advancing one's career.                                                                                 I highly recommend this awesome team to anyone determined to transform their lives from the humdrum of a 9-5 to literally working ANYWHERE in the WORLD!                                                                              I am very excited that I connected with them and look forward to only success stories ahead.                      
+                Thank you, Team Virtual Work World, for paying it forward.  I am motivated to one day do the same.
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-0"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="assets/img/testimonials/test03.jpg"
+                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+              </div>
+              <h5 class="mb-3">Ja Ne</h5>
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>There's an old saying about the difference between a manager and a leader, "Managers do things right. Leaders do the right things." And you are both! You inspire people around you to push themselves and I am grateful for your help in finding me a job that suits me. Thank you for leading us so well. You're the best!!! 🙌🙌🙌💜💜💜
+                <i class="fas fa-quote-right pe-2"></i>
               </p>
               <ul class="list-unstyled d-flex justify-content-center mb-0">
                 <li>
@@ -566,6 +596,106 @@
                 </li>
                 <li>
                   <i class="far fa-star fa-sm text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="assets/img/testimonials/test04.jpg"
+                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+              </div>
+              <h5 class="mb-3">Thalia BW</h5>
+              <!-- <h6 class="text-primary mb-3">Web Developer</h6> -->
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>Guess what!!!
+                I got a part time wfh job!!
+                Jisselle thank you for offering me the opportunity! I sincerely appreciate the time you took to explain the process, your consideration and guidance.
+                The process works people!!!!
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="assets/img/testimonials/test05.jpg"
+                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+              </div>
+              <h5 class="mb-3">Aisha Jones</h5>
+              <!-- <h6 class="text-primary mb-3">Web Developer</h6> -->
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>I would just like to thank Jisselle Baldwin-Todd and the the VWWC fam for helping me land an amazing opportunity!!! The process is real and WFH opportunities are tangible #letsgetit
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="assets/img/testimonials/test06.jpg"
+                  class="rounded-circle shadow-1-strong" width="150" height="150" />
+              </div>
+              <h5 class="mb-3">Renai Paria</h5>
+              <!-- <h6 class="text-primary mb-3">Web Developer</h6> -->
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you and your team I will be starting my dream job next month.
+                #remoteworking #WFH #amazingwomen #dreamsdocometrue
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-warning"></i>
                 </li>
               </ul>
             </div>
