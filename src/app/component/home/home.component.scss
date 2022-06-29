@@ -182,7 +182,7 @@ button.work:focus {
 .marquee-content {
   display: flex;
   list-style: none;
-  animation: scrolling 30s linear infinite;
+  animation: scrolling 48s linear infinite;
 }
 
 .marquee-item {
@@ -199,5 +199,5 @@ button.work:focus {
 
 @keyframes scrolling {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-1300px); }
+  100% { transform: translateX(-2000px); }
 }
