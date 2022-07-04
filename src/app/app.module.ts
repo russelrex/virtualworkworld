@@ -11,6 +11,7 @@ import { MyAgmComponent } from './component/google-map/my-agm.component';
 import { NgMarqueeModule } from 'ng-marquee';
 import { AccountingComponent } from './component/jobs/accounting/accounting.component';
 import { JobsComponent } from './component/jobs/jobs.component';
+import { TestimonialsComponent } from './component/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JobsComponent } from './component/jobs/jobs.component';
     ComingSoonComponent,
     MyAgmComponent,
     AccountingComponent,
-    JobsComponent
+    JobsComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ import { LogisticsComponent } from './component/jobs/logistics/logistics.compone
 import { EngineeringComponent } from './component/jobs/engineering/engineering.component';
 import { ECommerceComponent } from './component/jobs/e-commerce/e-commerce.component';
 import { DataEntryComponent } from './component/jobs/data-entry/data-entry.component';
+import { TestimonialsComponent } from './component/testimonials/testimonials.component';
 
 const routes: Routes = [
   {
@@ -94,7 +95,11 @@ const routes: Routes = [
         component: DataEntryComponent,
       },
     ],
-  }
+  },
+  {
+    path: 'testimonials',
+    component: TestimonialsComponent
+  },
 ];
 
 @NgModule({
