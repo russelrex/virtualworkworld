@@ -6,6 +6,32 @@
 **
 */
 
+.section-heading {
+  font-family: Anton,Arial,sans-serif;
+  font-size: 52px;
+  margin: 0px 250px;
+  color: #0a175c;
+}
+
+.sub-heading {
+  color: #1c2653;
+}
+
+.heading-summary{
+  color: #1c2653;
+  margin: 0px 200px;
+}
+
+@media (max-width:801px) {
+  .section-heading, .heading-summary {
+    margin: 0px;
+  }
+
+  header.masthead {
+    height: 1150px !important;
+  }
+}
+
 .job-nav {
   background-color: #c797eb;
   height: 250px;
