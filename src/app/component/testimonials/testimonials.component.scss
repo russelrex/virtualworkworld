@@ -174,31 +174,25 @@ button.work:focus {
   font-weight: bolder;
 }
 
-.marquee {
-  height: 150px;
-  overflow: hidden;
+.accordion-item { 
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid black;
+  border-radius: 0%;
 }
 
-.marquee-content {
-  // margin-left: -1000px;
-  display: flex;
-  list-style: none;
-  animation: scrolling 288s linear infinite;
+.question{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.marquee-item {
-  height: 150px;
-  width: 200px;
-  flex-shrink: 0;
-  margin-right: 10px;
+.answer{
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.marquee-image {
-  width: 100%;
-  height: auto;
-}
-
-@keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-8000px); }
+.details {
+  margin-left: -20px;
+  padding-top: 12px;
 }

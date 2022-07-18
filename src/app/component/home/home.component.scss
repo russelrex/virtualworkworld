@@ -187,3 +187,10 @@ button.work:focus {
 .carousel-indicators {
   margin-bottom: -3rem !important;
 }
+
+@media (max-width:801px) {
+  .carousel-item .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

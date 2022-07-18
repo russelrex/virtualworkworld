@@ -97,7 +97,7 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'testimonials',
+    path: 'testimonials/candidate',
     component: TestimonialsComponent
   },
 ];

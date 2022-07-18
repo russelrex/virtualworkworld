@@ -10,14 +10,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link nav-title" href="home#team">Employers</a></li>
-                        <li class="nav-item"><a class="nav-link nav-title" href="home#team">Job Seekers</a></li>
-                        <li class="nav-item"><a class="nav-link nav-title" href="home#team">Services</a></li>
+                        <li class="nav-item"><a class="nav-link nav-title" href="home#services">Employers</a></li>
+                        <li class="nav-item"><a class="nav-link nav-title" href="home#jobs">Job Seekers</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link nav-title" href="home#team">Services</a></li> -->
                         <li class="nav-item"><a class="nav-link nav-title" href="home#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link nav-title" href="home#timeline">Timeline</a></li>
                         <li class="nav-item"><a class="nav-link nav-title" href="home#testimonials">Testimonials</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link nav-title" href="home#about">Blogs</a></li> -->
-                        <li class="nav-item"><a class="nav-link nav-title" href="home#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link nav-title" href="#">Blogs</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link nav-title" href="home#about">About</a></li> -->
                         <li class="nav-item"><a class="nav-link nav-title" href="home#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
         <section class="page-section" id="about">
           <div class="container">
               <div class="text-center">
-                  <h2 class="section-heading text-uppercase">About Us</h2>
+                  <h2 class="section-heading text-uppercase">Trusted By</h2>
               </div>
               <div class="row text-center">
                 <!-- <div class="container">
@@ -338,7 +338,7 @@
           </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section" id="jobs">
+        <section class="page-section" id="tech">
           <div class="container" data-aos="zoom-in-right" data-aos-delay="300">
               <div class="text-center mb-5">
                   <h2 class="section-heading text-uppercase">Tech Stack</h2>
@@ -626,7 +626,7 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section bg-custom" id="timeline">
+        <section class="page-section" id="timeline">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Timeline</h2>
@@ -704,10 +704,10 @@
 
 
         <!-- Testimonials -->
-        <section class="page-section" id="testimonials">
+        <section class="page-section bg-custom" id="testimonials">
           <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">
-              <h3 class="mb-4">Testimonials</h3>
+              <h3 class="mb-4">What our employers say about our services…</h3>
               <br><br>
               <!-- <p class="mb-4 pb-2 mb-md-5 pb-md-0">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
@@ -816,6 +816,19 @@
                 </li>
               </ul>
             </div>
+            <a routerLink="/testimonials/candidate" target="_blank">
+              <div class="container text-center mt-5">
+                <button type="button" class="btn btn-primary btn-lg text-center">Employer Testimonials Page</button>
+              </div>
+            </a>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-10 col-xl-8 text-center mt-5">
+                <h3 class="mb-4">What our candidates say about your services…</h3>
+                <br><br>
+              </div>
+            </div>
+            <div class="row text-center">
             <div class="col-md-4 mb-5 mb-md-0"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
@@ -918,14 +931,14 @@
             </div>
           </div>
 
-          <a routerLink="/testimonials" target="_blank">
+          <a routerLink="/testimonials/candidate" target="_blank">
             <div class="container text-center mt-5">
-              <button type="button" class="btn btn-primary btn-lg text-center">Testimonials Page</button>
+              <button type="button" class="btn btn-primary btn-lg text-center">Candidate Testimonials Page</button>
             </div>
           </a>
         </section>
         <!-- Team-->
-        <section class="page-section bg-custom" id="team">
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
