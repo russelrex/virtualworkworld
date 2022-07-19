@@ -1,10 +1,199 @@
-/* You can add global styles to this file, and also import other style files */
+ul li {
+  border: none;
+}
 
-/* 
-**
-  JOBS
-**
-*/
+.mr-neg-80 {
+  margin-right: -80%;
+}
+
+i.fas {
+  color: black;
+}
+.bg-custom {
+  background-color: #f0ecfc;
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+}
+
+.work {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button.work.cust {
+	background-color: blue;
+}
+
+.responsive-width {
+  font-size: 3vw;
+}
+
+button.work.freel{
+	background-color: yellow;
+}
+
+@media (min-width:801px) and (min-width:1025px) and (min-width:1281px)  {
+  button.work.cust {
+    width: 70%;
+  }
+  button.work.freel{
+    width: 70%;
+  }
+}
+
+button.work.freel span{
+	color: black;
+}
+
+button.work {
+	width: 300px;
+	height: 100px;
+	cursor: pointer;
+	border: 0px solid #5b3f69;
+	background: #34283b;
+	transition: 200ms;
+  border-radius: 15px;
+}
+
+button.work span {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 30px;
+	color: #f0ecfc;
+	transition: 500ms;
+}
+
+button.work::before, button.work::after {
+	content: '';
+	position: absolute;
+	margin-left: -75px;
+	margin-top: -25px;
+	width: 140px;
+	height: 40px;
+	z-index: -1;
+}
+
+button.work::before {
+	border: 5px solid #7e5791;
+	transition: 200ms;
+}
+
+button.work::after {
+	border: 5px solid #b37ccf;
+	transition: 500ms;
+}
+
+button.work:hover {
+	border: 5px solid #5b3f69;
+}
+
+button.work:hover span {
+	letter-spacing: 4px;
+	font-size: 20px;
+}
+
+button.work:hover::before {
+	width: 150px;
+	height: 50px;
+	margin-left: -80px;
+	margin-top: -30px;
+}
+
+button.work:hover::after {
+	width: 160px;
+	height: 60px;
+	margin-left: -85px;
+	margin-top: -35px;
+}
+
+button.work:focus {
+	outline: none;
+}
+
+.banner .col img {
+  width: 20%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.list-group {
+  --bs-list-group-bg:  none;
+}
+
+.nav-title {
+  font-weight: bolder;
+}
+
+.marquee {
+  height: 150px;
+  overflow: hidden;
+}
+
+.marquee-content {
+  // margin-left: -1000px;
+  display: flex;
+  list-style: none;
+  animation: scrolling 288s linear infinite;
+}
+
+.marquee-item {
+  height: 150px;
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.marquee-image {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-15000px); }
+}
+
+.carousel-item .row {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.carousel-item .row div {
+  padding-bottom: 30px;
+}
+
+.carousel-item div div img {
+  width: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-indicators button {
+  background-color: grey;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel-indicators {
+  margin-bottom: -3rem !important;
+}
+
+@media (max-width:801px) {
+  .carousel-item .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 
 h1, h2, h3, h4, h5 {
   font-family: Anton,Arial,sans-serif;
