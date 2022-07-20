@@ -1,3 +1,124 @@
+#mainNav {
+  background-color: white !important;
+}
+
+@font-face {
+  font-family: figtree;
+  src: url(assets/fonts/otf/Figtree-Medium.otf) format("opentype");
+}
+
+.job-button div div button{ 
+  width: 220px;
+  height: 57px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 128px;
+  color: white;
+  font-size: 24px;
+}
+
+button.btn {
+  font-family: Figtree,Arial,sans-serif;
+}
+
+div.card.banner{
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #D9D9D9;
+}
+
+.seeker-section {
+  padding-top: 15rem !important;
+}
+
+.seeker-section div div div.card{
+  height: 333px;
+  border-radius: 15px;
+}
+
+.seeker-section div div div.card-body{
+  margin: 30px;
+}
+
+.seeker-section div div div.card.seeker{
+  background: #32D2CC;
+}
+
+.seeker-section div div div.card.hire{
+  background: #B07EFF;
+}
+
+.founded {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: #1B3180;
+  margin-bottom: 30px;
+}
+
+.founded-details{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #6A6A6A;
+}
+
+button.btn.founded-btn{
+  width: 311px;
+  height: 57px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 128px;
+  font-size: 24px;
+  border: 2px solid #1B3180
+}
+
+button.btn.founded-btn:hover{
+  color: #32D2CC;
+  border: 2px solid #32D2CC
+}
+
+.services div.card {
+  width: 384px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.services div.card-body {
+  margin: 22px;
+}
+
+.services div.card.first {
+  background: #FEEFBC;
+}
+
+.services div.card.second {
+  background: #D8F9F7;
+}
+
+.services div.card.third {
+  background: #EADCFF;
+}
+
+.sub-heading-services {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: #1B3180;
+}
+
+button.btn.founded-btn.second:hover {
+  color: #EADCFF;
+  border: 2px solid #EADCFF
+}
+
+button.btn.founded-btn.third:hover {
+  color: #FEEFBC;
+  border: 2px solid #FEEFBC
+}
+
 ul li {
   border: none;
 }
@@ -193,21 +314,82 @@ button.work:focus {
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  .job-button div div{ 
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: Anton,Arial,sans-serif;
+@media (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+p, h1, h2, h3, h4, h5 {
+  font-family: Figtree,Arial,sans-serif !important;
+}
+
+.trusted {
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #1B3180;
 }
 
 .section-heading {
-  font-family: Anton,Arial,sans-serif;
-  font-size: 52px;
+  font-family: Figtree,Arial,sans-serif;
+  font-size: 75px;
   margin: 0px 250px;
-  color: #0a175c;
+  color: white;
 }
 
 .sub-heading {
-  color: #1c2653;
+  font-family: Figtree,Arial,sans-serif;
+  color: white;
+}
+
+/* 
+* Seeker Section
+*/
+
+.sub-heading-seeker {
+  font-family: Figtree,Arial,sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+}
+
+.details-seeker {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.seeker div button{ 
+  width: 220px;
+  height: 57px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 128px;
+  color: white;
+  font-size: 24px;
+}
+
+.hire div button{ 
+  width: 220px;
+  height: 57px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 128px;
+  color: white;
+  font-size: 24px;
 }
 
 .heading-summary{

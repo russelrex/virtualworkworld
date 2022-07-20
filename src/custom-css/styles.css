@@ -11363,7 +11363,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: deeppink;
+  color: #5C5C5C;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11408,16 +11408,16 @@ p {
 header.masthead {
   padding-top: 13rem;
   padding-bottom: 6rem;
-  height: 750px;
+  height: 1050px;
   text-align: center;
   /* color: #fff; */
   background-color: #f0ecfc;
-	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
-  /* background-image: url("../assets/img/bg-img.jpg");
+	/* background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%); */
+  background-image: url("../assets/img/background/Rectangle.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover; */
+  background-size: cover;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
