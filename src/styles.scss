@@ -24,7 +24,7 @@ button.btn {
 div.card.banner{
   height: 250px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #D9D9D9;
+  // background-color: #D9D9D9;
 }
 
 .seeker-section {
@@ -256,17 +256,13 @@ button.work:focus {
 }
 
 .marquee-content {
-  // margin-left: -1000px;
   display: flex;
   list-style: none;
-  animation: scrolling 288s linear infinite;
+  margin-left: -1250px !important;
 }
 
 .marquee-item {
-  height: 150px;
-  width: 200px;
   flex-shrink: 0;
-  margin-right: 10px;
 }
 
 .marquee-image {
