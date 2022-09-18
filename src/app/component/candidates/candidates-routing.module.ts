@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
+    { path: '', redirectTo: '/candidates/info', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class JobsRoutingModule { }
+export class CandidatesRoutingModule { }

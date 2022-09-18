@@ -20,15 +20,34 @@ import { EngineeringComponent } from './component/jobs/engineering/engineering.c
 import { ECommerceComponent } from './component/jobs/e-commerce/e-commerce.component';
 import { DataEntryComponent } from './component/jobs/data-entry/data-entry.component';
 import { TestimonialsComponent } from './component/testimonials/testimonials.component';
+import { CandidatesComponent } from './component/candidates/candidates.component';
+import { SearchComponent } from './component/candidates/search/search.component';
+import { InfoComponent } from './component/candidates/info/info.component';
+import { JobsCandidateComponent } from './component/candidates/jobs-candidate/jobs-candidate.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ComingSoonComponent
+    component: HomeComponent
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'candidates',
+    component: CandidatesComponent,
+    children: [
+      { path: '', redirectTo: 'info',  pathMatch:'full' },
+      {
+        path: 'info',
+        component: InfoComponent,
+      },
+      {
+        path: 'search',
+        component: SearchComponent,
+      },
+      {
+        path: 'jobs-candidate',
+        component: JobsCandidateComponent,
+      },
+    ],
   },
   {
     path: 'jobs',

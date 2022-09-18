@@ -11367,7 +11367,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: whitesmoke;
+  border-bottom: 5px solid #FBCA1F;
 }
 
 @media (min-width: 992px) {
@@ -11721,10 +11721,8 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #1B3180;
+  color: white;
 }
 section#contact .section-heading {
   color: #fff;

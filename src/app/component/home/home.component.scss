@@ -23,3 +23,44 @@
 .jobs div.card.fourth {
     background: #FBCBFF;
 }
+
+.testimonial-bg-color div div .card-body {
+    background-color: #F5F5F5;
+}
+
+.testimonial-nav {
+    margin-left: auto;
+}
+
+.testimonial-nav button {
+    background: none !important;
+    border: none;
+}
+
+.testi-carousel-item .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.testi-carousel-item .row div {
+    padding-bottom: 0;
+}
+
+.testimonial-container li a {
+    color: #1B3180;
+}
+
+.testimonial-container li a.active {
+    background-color: #EADCFF;
+}
+
+.testimonial-container {
+    border-color: #EADCFF;
+}
+
+.contact-submit-btn {
+    background-color: #9BE551;
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+}

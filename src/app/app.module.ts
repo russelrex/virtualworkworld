@@ -12,6 +12,9 @@ import { NgMarqueeModule } from 'ng-marquee';
 import { AccountingComponent } from './component/jobs/accounting/accounting.component';
 import { JobsComponent } from './component/jobs/jobs.component';
 import { TestimonialsComponent } from './component/testimonials/testimonials.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CandidatesComponent } from './component/candidates/candidates.component';
+import { InfoComponent } from './component/candidates/info/info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { TestimonialsComponent } from './component/testimonials/testimonials.com
     MyAgmComponent,
     AccountingComponent,
     JobsComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    CandidatesComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { TestimonialsComponent } from './component/testimonials/testimonials.com
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyC3ucf4jfPb6B18jcdHFkNDjZk99gZQOio'
     }),
-    NgMarqueeModule
+    NgMarqueeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

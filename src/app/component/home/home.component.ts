@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import * as AOS from 'aos';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
