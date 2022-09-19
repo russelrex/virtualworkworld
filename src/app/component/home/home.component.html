@@ -12,11 +12,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link nav-title" href="/candidates">Candidates</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="#services">Employers</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="#timeline">Blog</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                  <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>CANDIDATES</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates">Candidates</a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates/search">Search</a></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>EMPLOYERS</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers">Employers</a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/services">Services</a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/pricing">Pricing</a></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-title" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link nav-title" href="javascript:void(0);">Blog</a></li>
+                <li class="nav-item"><a class="nav-link nav-title" href="javascript:void(0);">Contact</a></li>
             </ul>
         </div>
     </div>

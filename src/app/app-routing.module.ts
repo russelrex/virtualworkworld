@@ -24,6 +24,12 @@ import { CandidatesComponent } from './component/candidates/candidates.component
 import { SearchComponent } from './component/candidates/search/search.component';
 import { InfoComponent } from './component/candidates/info/info.component';
 import { JobsCandidateComponent } from './component/candidates/jobs-candidate/jobs-candidate.component';
+import { EmployersComponent } from './component/employers/employers.component';
+import { EmployersInfoComponent } from './component/employers/employers-info/employers-info.component';
+import { EmployersServicesComponent } from './component/employers/employers-services/employers-services.component';
+import { EmployersPricingComponent } from './component/employers/employers-pricing/employers-pricing.component';
+import { AboutInfoComponent } from './component/about/about-info/about-info.component';
+import { AboutComponent } from './component/about/about.component';
 
 const routes: Routes = [
   {
@@ -46,6 +52,36 @@ const routes: Routes = [
       {
         path: 'jobs-candidate',
         component: JobsCandidateComponent,
+      },
+    ],
+  },
+  {
+    path: 'employers',
+    component: EmployersComponent,
+    children: [
+      { path: '', redirectTo: 'info',  pathMatch:'full' },
+      {
+        path: 'info',
+        component: EmployersInfoComponent,
+      },
+      {
+        path: 'services',
+        component: EmployersServicesComponent,
+      },
+      {
+        path: 'pricing',
+        component: EmployersPricingComponent,
+      },
+    ],
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    children: [
+      { path: '', redirectTo: 'info',  pathMatch:'full' },
+      {
+        path: 'info',
+        component: AboutInfoComponent,
       },
     ],
   },

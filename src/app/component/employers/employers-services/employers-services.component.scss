@@ -1,0 +1,78 @@
+.section-heading {
+    color: #1B3180;
+    height: 250px;
+    padding-top: 150px;
+}
+
+h5 {
+    color: #6A6A6A;
+}
+
+h1 {
+    color: #1B3180;
+}
+
+.testi-carousel-item .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.testimonial-bg-color div div .card-body {
+    background-color: #F5F5F5;
+}
+
+.testimonial-nav {
+    margin-left: auto;
+}
+
+.testimonial-nav button {
+    background: none !important;
+    border: none;
+}
+
+.testi-carousel-item .row div {
+    padding-bottom: 0;
+}
+
+button.btn.founded-btn-white{
+    width: 311px;
+    height: 57px;
+    border: 2px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 128px;
+    font-size: 24px;
+    border: 2px solid white;
+    color: white;
+}
+  
+button.btn.founded-btn-white:hover{
+    color: #32D2CC;
+    border: 2px solid #32D2CC
+}
+
+.faq .accordion-item .accordion-header .accordion-button{
+    background: none;
+    color: #1B3180;
+}
+
+.faq .accordion-item{
+    border: none;
+}
+
+.faq .accordion-item .accordion-header{
+    border-bottom: 1px solid;
+}
+
+.nav-pills li {
+    margin: 5px;
+    width: 500px;
+    border-bottom: 1px solid #F47BFF;
+}
+
+.nav-pills li a {
+    color: #1B3180;
+}
+
+.nav-pills li a.active {
+    background-color: #F5F5F5;
+}

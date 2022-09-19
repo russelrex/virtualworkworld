@@ -15,6 +15,10 @@ import { TestimonialsComponent } from './component/testimonials/testimonials.com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CandidatesComponent } from './component/candidates/candidates.component';
 import { InfoComponent } from './component/candidates/info/info.component';
+import { EmployersComponent } from './component/employers/employers.component';
+import { EmployersInfoComponent } from './component/employers/employers-info/employers-info.component';
+import { EmployersServicesComponent } from './component/employers/employers-services/employers-services.component';
+import { AboutComponent } from './component/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { InfoComponent } from './component/candidates/info/info.component';
     JobsComponent,
     TestimonialsComponent,
     CandidatesComponent,
-    InfoComponent
+    InfoComponent,
+    EmployersComponent,
+    EmployersInfoComponent,
+    EmployersServicesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
