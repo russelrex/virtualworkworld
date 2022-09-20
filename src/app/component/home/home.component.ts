@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
+import {RouteService} from '../services/route.service';
 import * as AOS from 'aos';
 
 @Component({
@@ -9,10 +10,17 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  isLoading = false;
+
+  constructor(private routeService: RouteService) { }
 
   ngOnInit(): void {
-    AOS.init();
+    // AOS.init();
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+      this.routeService.navigate('/');
+    }, 1500);
   }
 
 }

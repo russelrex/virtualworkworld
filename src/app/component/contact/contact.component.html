@@ -13,33 +13,83 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item">
-                    <div ngbDropdown class="d-inline-block">
-                        <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>CANDIDATES</button>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                          <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates"><span style="color: black;">Candidates</span></a></button>
-                          <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates/search"><span style="color: black;">Search</span></a></button>
-                        </div>
+                  <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>CANDIDATES</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates"><span style="color: black;">Candidates</span></a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates/search"><span style="color: black;">Search</span></a></button>
                     </div>
+                  </div>
                 </li>
                 <li class="nav-item">
-                    <div ngbDropdown class="d-inline-block">
-                        <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>EMPLOYERS</button>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                          <button ngbDropdownItem><a class="nav-link nav-title" href="/employers"><span style="color: black;">Employers</span></a></button>
-                          <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/services"><span style="color: black;">Services</span></a></button>
-                          <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/pricing"><span style="color: black;">Pricing</span></a></button>
-                        </div>
-                      </div>
+                  <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>EMPLOYERS</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers"><span style="color: black;">Employers</span></a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/services"><span style="color: black;">Services</span></a></button>
+                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/pricing"><span style="color: black;">Pricing</span></a></button>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item"><a class="nav-link nav-title" href="/about">About</a></li>
                 <li class="nav-item"><a class="nav-link nav-title" href="/blog;">Blog</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="/contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-title active" href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<router-outlet></router-outlet>
+<section class="page-section">
+    <div class="container text-center section-heading">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: #1B3180">Contact</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h4>Tell us what you need and we'll make it happen. Easy peasy.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card first">
+                <div class="card-body">
+                    <img src="../../../assets/img/utilities/binoculars.png" class="mb-15">
+                  <h1 class="mb-15">Job Seeker?</h1>
+                  <div class="row">
+                    <div class="col-1">
+                        <img src="../../../assets/img/utilities/mail.png">
+                    </div>
+                    <div class="col">
+                        <p>careers@virtualworkworld.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card second">
+                <div class="card-body">
+                    <img src="../../../assets/img/utilities/people02.png" class="mb-15">
+                    <h1 class="mb-15">Employer?</h1>
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="../../../assets/img/utilities/mail.png">
+                        </div>
+                        <div class="col">
+                            <p>info@virtualworkworld.com</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
 
 <section class="page-section" id="contact">
     <div class="container">

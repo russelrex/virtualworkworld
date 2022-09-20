@@ -11371,8 +11371,9 @@ p {
   color: #5C5C5C;
   letter-spacing: 0.0625em;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 5px solid #FBCA1F;
+  /* border-bottom: 5px solid #FBCA1F; */
 }
 
 @media (min-width: 992px) {

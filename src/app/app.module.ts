@@ -19,6 +19,9 @@ import { EmployersComponent } from './component/employers/employers.component';
 import { EmployersInfoComponent } from './component/employers/employers-info/employers-info.component';
 import { EmployersServicesComponent } from './component/employers/employers-services/employers-services.component';
 import { AboutComponent } from './component/about/about.component';
+import { BlogComponent } from './component/blog/blog.component';
+import { BlogInfoComponent } from './component/blog/blog-info/blog-info.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { AboutComponent } from './component/about/about.component';
     EmployersInfoComponent,
     EmployersServicesComponent,
     AboutComponent,
+    BlogComponent,
+    BlogInfoComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

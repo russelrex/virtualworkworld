@@ -1,3 +1,13 @@
+<div *ngIf="isLoading" class="sk-chase">
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+</div>
+
+<div *ngIf="!isLoading">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="/">
@@ -49,21 +59,26 @@
       </div>
       <div class="container job-button">
         <div class="row">
-          <div class="col" style="text-align: end;">
+            <div class="col" style="text-align: end;">
+              <a href="/candidates/search">
             <button type="button" class="btn">Find a job
               <i class="fa-solid fa-arrow-right"></i>
             </button>
+            </a>
           </div>
           <div class="col" style="text-align: start;">
+            <a href="/candidates">
             <button type="button" class="btn">Find a Talent
               <i class="fa-solid fa-arrow-right"></i>
             </button>
+            </a>
           </div>
         </div>
       </div>
       <div class="container mt-5">
         <img src="../../../assets/img/background/Animated Map.png" width="100%">
       </div>
+    </header>
 
     <section class="page-section" style="padding-top: 10rem !important;">
       <div class="container mt-5">
@@ -158,9 +173,11 @@
             <br><br>
             We help create compatible working relationships and remote workplace policies that bring out the best in each other and help businesses boom.
           </p>
+          <a href="/about">
           <button type="button" class="btn founded-btn">About us
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+          </a>
         </div>
         <div class="col">
             <img src="../../../assets/img/background/Group.png">
@@ -212,19 +229,44 @@
     </div>
     <div class="row mt-3">
       <div class="col">
+        <a href="/employers/services">
         <button type="button" class="btn founded-btn">Work with us
           <i class="fa-solid fa-arrow-right"></i>
         </button>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="page-section" id="">
+<section class="page-section pt-0">
+  <div class="container mt-5">
+    <div class="card banner">
+      <div class="card-body">
+        <h2 class="trusted">Tech Stack</h2>
+      </div>
+      <div class="container mb-4">
+        <marquee id='scroll_news' scrollamount="5" loop="infinite">
+          <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+          <ul class="marquee-content">
+            <li class="marquee-item">
+              <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png">
+            </li>
+            <li class="marquee-item">
+              <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png" style="padding-left: 30px;">
+            </li>
+          </ul></div>
+        </marquee>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section pt-0">
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="founded" style="text-align: start;">Jobs</h2>
+        <h2 class="founded" style="text-align: center;">Jobs</h2>
       </div>
     </div>
     <div class="row jobs">
@@ -232,13 +274,12 @@
         <div class="card first">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/bank.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -258,11 +299,12 @@
         <div class="card second">
           <div class="card-body">
             <div class="row">
-                <div class="col-3">
-                  dasdas
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/chat-dots.png">
+                  </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -282,13 +324,12 @@
         <div class="card third">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/palette.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -308,13 +349,12 @@
         <div class="card fourth">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/clipboard-data.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -334,13 +374,12 @@
         <div class="card second">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/laptop.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -360,13 +399,12 @@
         <div class="card third">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/cart-check.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -386,13 +424,12 @@
         <div class="card fourth">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/people.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -412,13 +449,12 @@
         <div class="card first">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/receipt.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -438,13 +474,12 @@
         <div class="card first">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/truck.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -464,13 +499,12 @@
         <div class="card second">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/code-square.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -490,13 +524,12 @@
         <div class="card third">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/cpu.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -516,13 +549,12 @@
         <div class="card fourth">
           <div class="card-body">
             <div class="row">
-                <div class="col-3 text-center">
-                  <a routerLink="/jobs/accounting" target="_blank">
-                    <i class="fas fa-university fa-3x"></i>
+                <div class="col-2 text-center pt-2">
+                  <a routerLink="/candidates/jobs" target="_blank">
+                    <img src="../../../assets/img/jobs/globe.png">
                   </a>
                 </div>
-                <div class="col-9">
-                  
+                <div class="col-10">
                   <div class="row">
                     <div class="col">
                       Accounting & Finance
@@ -538,6 +570,14 @@
           </div>
         </div>              
       </div>
+    </div>
+    
+    <div class="text-center mt-3">
+      <a routerLink="/candidates/search" target="_blank">
+        <button type="button" class="btn founded-btn">Search jobs
+        <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
     </div>
   </div>
 </section>
@@ -966,13 +1006,14 @@
               </div>
               <div class="row mt-3">
                 <div class="col" style="margin-left: 15px;">
-                  <a href="#" target="_blank"><img src="../../../assets/img/logos/Facebook.png" class="me-3"></a>
-                  <a href="#" target="_blank"><img src="../../../assets/img/logos/Linkedin.png" class="me-3"></a>
-                  <a href="#" target="_blank"><img src="../../../assets/img/logos/Instagram.png" class="me-3"></a>
+                  <a href="https://www.facebook.com/groups/virtualworkworld" target="_blank"><img src="../../../assets/img/logos/Facebook.png" class="me-3"></a>
+                  <a href="https://www.linkedin.com/in/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Linkedin.png" class="me-3"></a>
+                  <a href="https://www.instagram.com/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Instagram.png" class="me-3"></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
     </div>
-</section>  
+</section>
+</div>

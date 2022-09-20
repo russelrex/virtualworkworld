@@ -30,6 +30,11 @@ import { EmployersServicesComponent } from './component/employers/employers-serv
 import { EmployersPricingComponent } from './component/employers/employers-pricing/employers-pricing.component';
 import { AboutInfoComponent } from './component/about/about-info/about-info.component';
 import { AboutComponent } from './component/about/about.component';
+import { BlogComponent } from './component/blog/blog.component';
+import { BlogInfoComponent } from './component/blog/blog-info/blog-info.component';
+import { BlogFullComponent } from './component/blog/blog-full/blog-full.component';
+import { BlogListsComponent } from './component/blog/blog-lists/blog-lists.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -50,7 +55,7 @@ const routes: Routes = [
         component: SearchComponent,
       },
       {
-        path: 'jobs-candidate',
+        path: 'jobs',
         component: JobsCandidateComponent,
       },
     ],
@@ -86,70 +91,27 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'jobs',
-    component: JobsComponent,
+    path: 'blog',
+    component: BlogComponent,
     children: [
+      { path: '', redirectTo: 'info',  pathMatch:'full' },
       {
-        path: 'accounting',
-        component: AccountingComponent,
+        path: 'info',
+        component: BlogInfoComponent,
       },
       {
-        path: 'accounting/1',
-        component: AccountingOneComponent,
+        path: 'full',
+        component: BlogFullComponent,
       },
       {
-        path: 'accounting/2',
-        component: AccountingTwoComponent,
-      },
-      {
-        path: 'accounting/3',
-        component: AccountingThreeComponent,
-      },
-      {
-        path: 'software',
-        component: SoftwareComponent,
-      },
-      {
-        path: 'web',
-        component: WebComponent,
-      },
-      {
-        path: 'call-center',
-        component: CallCenterComponent,
-      },
-      {
-        path: 'human-resource',
-        component: HumanResourceComponent,
-      },
-      {
-        path: 'programming',
-        component: ProgrammingComponent,
-      },
-      {
-        path: 'creative',
-        component: CreativeComponent,
-      },
-      {
-        path: 'lead',
-        component: LeadComponent,
-      },
-      {
-        path: 'logistics',
-        component: LogisticsComponent,
-      },
-      {
-        path: 'engineering',
-        component: EngineeringComponent,
-      },
-      {
-        path: 'e-commerce',
-        component: ECommerceComponent,
-      },
-      {
-        path: 'data-entry',
-        component: DataEntryComponent,
+        path: 'list',
+        component: BlogListsComponent,
       },
     ],
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
   {
     path: 'testimonials/candidate',

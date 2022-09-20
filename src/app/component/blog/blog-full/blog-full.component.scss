@@ -1,0 +1,78 @@
+h1, h5 {
+    color: #1B3180;
+}
+
+.back-btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #6A6A6A;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon {
+    height: 50px;
+    width: 56px;
+}
+
+.apply-btn {
+    color: white;
+    width: 130px;
+    height: 50px;
+    background: #9BE651;
+    border-radius: 128px;
+}
+
+.jobs-desc {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.jobs-desc .row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.card-text {
+    color: #6A6A6A;
+}
+
+.jobs-details {
+    border: none;
+}
+
+.card {
+    border: none;
+    padding: 20px;
+}
+
+.blog-line {
+    border-bottom: 3px solid #EADCFF;
+}
+
+.recommended div .card{
+    padding: 0;
+}
+
+.card-text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.history-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #D9D9D9;
+}

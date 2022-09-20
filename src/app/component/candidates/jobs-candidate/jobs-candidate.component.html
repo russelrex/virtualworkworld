@@ -1,10 +1,9 @@
 <section class="page-section" style="padding-bottom: 50px;">
     <div class="container section-heading" style="margin-top: 100px;">
         <div class="row">
-            <div class="wrapper">
-                <img src="../../../assets/img/utilities/arrow-left.png">
-                <span class="back-btn">Go Back</span>
-            </div>
+            <button type="button" class="btn back-btn mt-3" (click)="backClicked()">
+                <i class="fa-solid fa-arrow-left me-3"></i>Go Back
+            </button>
         </div>
         <div class="row">
             <h1>Business Development Manager</h1>
@@ -165,7 +164,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mt-3 mb-5">
             <div class="card recommended-card">
                 <div class="card-body">
                     <div class="row">
