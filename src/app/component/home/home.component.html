@@ -54,21 +54,25 @@
         <div class="text-center">
           <h1 class="section-heading">Remote working,<br> done right.</h1>
           <br>
-          <h4 class="sub-heading">We're the best dating app for jobs. But every swipe is right.</h4>
+          <h4 class="sub-heading">No swiping or scrolling. Just the best candidates and companies in one place.</h4>
         </div>
       </div>
       <div class="container job-button">
         <div class="row">
-            <div class="col" style="text-align: end;">
+          <div class="col" style="text-align: end;">
               <a href="/candidates/search">
-            <button type="button" class="btn">Find a job
+            <button type="button" class="btn candidate-btn" placement="left"
+              ngbTooltip="Example Description for finding a job">
+              Find a job
               <i class="fa-solid fa-arrow-right"></i>
             </button>
             </a>
           </div>
           <div class="col" style="text-align: start;">
             <a href="/candidates">
-            <button type="button" class="btn">Find a Talent
+            <button type="button" class="btn employer-btn" placement="right"
+                ngbTooltip="Example Description for finding a talent">
+                Find a Talent
               <i class="fa-solid fa-arrow-right"></i>
             </button>
             </a>
@@ -76,11 +80,34 @@
         </div>
       </div>
       <div class="container mt-5">
-        <img src="../../../assets/img/background/Animated Map.png" width="100%">
+        <div id="animatedHeaderFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active" data-bs-interval="1500">
+              <img src="../../../assets/img/background/state=1.png">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="../../../assets/img/background/state=2.png">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="../../../assets/img/background/state=3.png">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+              <img src="../../../assets/img/background/state=4.png">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#animatedHeaderFade" data-bs-slide="prev" hidden>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" #animatedHeader data-bs-target="#animatedHeaderFade" data-bs-slide="next" hidden>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <section class="page-section" style="padding-top: 10rem !important;">
+    <section class="page-section">
       <div class="container mt-5">
         <div class="card banner">
           <div class="card-body">
@@ -103,7 +130,7 @@
       </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section" *ngIf="!isLoading">
       <div class="container" style="max-width: 1600px;">
           <div class="row text-center">
             <div id="descriptionCarousel" class="carousel slide" data-bs-ride="true">
@@ -116,28 +143,28 @@
               </div>
 
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-01.png">
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-02.png">
                   </div>
                 </div>
                 
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-03.png">
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-04.png">
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-05.png">
                   </div>
@@ -157,11 +184,11 @@
       </div>
   </section>
   
-  <section class="page-section about-us">
+  <section class="page-section about-us mt-5">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="founded" style="text-align: start;">Founded <br> on fairness</h2>
+          <h2 class="founded" style="text-align: start;">Founded on fairness</h2>
           <p class="founded-details">
             We put people first.
             <br><br>
@@ -180,13 +207,33 @@
           </a>
         </div>
         <div class="col">
-            <img src="../../../assets/img/background/Group.png">
+          <div id="subHeaderAnimated" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active" data-bs-interval="1500">
+                <img src="../../../assets/img/background/vww_photogrida.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="../../../assets/img/background/vww_photogridb.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="../../../assets/img/background/vww_photogridc.png">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#subHeaderAnimated" data-bs-slide="prev" hidden>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" #animatedSubHeader data-bs-target="#subHeaderAnimated" data-bs-slide="next" hidden>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-<section class="page-section" id="services">
+<section class="page-section mt-5" id="services">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -228,7 +275,7 @@
       </div>
     </div>
     <div class="row mt-3">
-      <div class="col">
+      <div class="col text-center">
         <a href="/employers/services">
         <button type="button" class="btn founded-btn">Work with us
           <i class="fa-solid fa-arrow-right"></i>
@@ -239,8 +286,8 @@
   </div>
 </section>
 
-<section class="page-section pt-0">
-  <div class="container mt-5">
+<section class="page-section mt-5">
+  <div class="container">
     <div class="card banner">
       <div class="card-body">
         <h2 class="trusted">Tech Stack</h2>
@@ -262,7 +309,7 @@
   </div>
 </section>
 
-<section class="page-section pt-0">
+<section class="page-section mt-5">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -582,7 +629,7 @@
   </div>
 </section>
 
-<section class="page-section" id="">
+<section class="page-section mt-5" id="">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -590,6 +637,115 @@
       </div>
     </div>
     <ul ngbNav #nav="ngbNav" class="nav-tabs testimonial-container">
+      <li [ngbNavItem]="2">
+        <a ngbNavLink><p>What our companies say</p></a>
+        <ng-template ngbNavContent>
+          <div class="row testimonial-bg-color">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../../../assets/img/testimonials/company-01.png"
+                      class="rounded-circle shadow-1-strong" width="150" height="150" />
+                  </div>
+                  <h5 class="mb-3">Company Name</h5>
+                  <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>              
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../../../assets/img/testimonials/company-02.png"
+                      class="rounded-circle shadow-1-strong" width="150" height="150" />
+                  </div>
+                  <h5 class="mb-3">Company Name</h5>
+                  <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>              
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="../../../assets/img/testimonials/company-03.png"
+                      class="rounded-circle shadow-1-strong" width="150" height="150" />
+                  </div>
+                  <h5 class="mb-3">Company Name</h5>
+                  <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                    <i class="fas fa-quote-right pe-2"></i>
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </ng-template>
+      </li>
       <li [ngbNavItem]="1">
         <a ngbNavLink><p>What our candidates say</p></a>
         <ng-template ngbNavContent>
@@ -808,116 +964,6 @@
           </div>
         </ng-template>
       </li>
-      <li [ngbNavItem]="2">
-        <a ngbNavLink><p>What our companies say</p></a>
-        <ng-template ngbNavContent>
-          <div class="row testimonial-bg-color">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex justify-content-center mb-4">
-                    <img src="../../../assets/img/testimonials/company-01.png"
-                      class="rounded-circle shadow-1-strong" width="150" height="150" />
-                  </div>
-                  <h5 class="mb-3">Company Name</h5>
-                  <p class="px-xl-3">
-                    <i class="fas fa-quote-left pe-2"></i>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                    <i class="fas fa-quote-right pe-2"></i>
-                  </p>
-                  <ul class="list-unstyled d-flex justify-content-center mb-0">
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>              
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex justify-content-center mb-4">
-                    <img src="../../../assets/img/testimonials/company-02.png"
-                      class="rounded-circle shadow-1-strong" width="150" height="150" />
-                  </div>
-                  <h5 class="mb-3">Company Name</h5>
-                  <p class="px-xl-3">
-                    <i class="fas fa-quote-left pe-2"></i>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                    <i class="fas fa-quote-right pe-2"></i>
-                  </p>
-                  <ul class="list-unstyled d-flex justify-content-center mb-0">
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>              
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex justify-content-center mb-4">
-                    <img src="../../../assets/img/testimonials/company-03.png"
-                      class="rounded-circle shadow-1-strong" width="150" height="150" />
-                  </div>
-                  <h5 class="mb-3">Company Name</h5>
-                  <p class="px-xl-3">
-                    <i class="fas fa-quote-left pe-2"></i>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                    <i class="fas fa-quote-right pe-2"></i>
-                  </p>
-                  <ul class="list-unstyled d-flex justify-content-center mb-0">
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                    <li>
-                      <i class="fas fa-star fa-sm text-warning"></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>              
-            </div>
-          </div>
-        </ng-template>
-      </li>
-      
       <li class="testimonial-nav">
         <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
           <img src="../../../assets/img/utilities/arrow-left.png" width="100%">
@@ -1016,4 +1062,4 @@
         </div>
     </div>
 </section>
-</div>
+<!-- </div> -->

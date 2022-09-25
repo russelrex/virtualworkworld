@@ -80,3 +80,23 @@
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     border-bottom: none;
 }
+
+.candidate-btn{
+  color: #D8F9F7;
+  border-color: #D8F9F7;
+}
+
+.candidate-btn:hover {
+  color: #FBCBFF;
+  border-color: #FBCBFF;
+}
+
+.employer-btn{
+  color: #1B3180;
+  border-color: #1B3180;
+}
+
+.employer-btn:hover {
+  color: #EADCFF;
+  border-color: #EADCFF;
+}

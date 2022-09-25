@@ -11306,7 +11306,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 1rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11412,9 +11412,9 @@ p {
   }
 }
 header.masthead {
-  padding-top: 13rem;
+  padding-top: 8rem;
   padding-bottom: 6rem;
-  height: 1050px;
+  height: 835px;
   text-align: center;
   /* color: #fff; */
   background-color: #f0ecfc;

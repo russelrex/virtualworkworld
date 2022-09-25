@@ -31,7 +31,9 @@
     "fontsource-anton": "^4.0.0",
     "jquery": "^3.6.0",
     "marquee": "^0.2.1",
+    "ng-image-slider": "^6.0.0",
     "ng-marquee": "^9.5.0",
+    "ng-simple-slideshow": "^1.2.9",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
