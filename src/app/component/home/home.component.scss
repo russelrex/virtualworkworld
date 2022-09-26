@@ -101,12 +101,13 @@
   border-color: #EADCFF;
 }
 
-.carousel-fade .carousel-inner .carousel-item {
+.founded-fade .founded-inner .founded-item {
+  opacity: 0;
   transition-property: opacity;
   transition-duration: 3s;
   transition-timing-function: linear;
 }
 
-.carousel-fade .carousel-inner .active {
+.founded-fade .founded-inner .active {
   opacity: 1;
 }
