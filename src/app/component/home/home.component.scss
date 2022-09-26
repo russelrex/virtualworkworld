@@ -100,3 +100,13 @@
   color: #EADCFF;
   border-color: #EADCFF;
 }
+
+.carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
