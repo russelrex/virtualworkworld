@@ -79,9 +79,9 @@ button.btn.founded-btn:hover{
 }
 
 .services div.card {
-  width: 384px;
   height: 400px;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .services div.card-body {
@@ -162,6 +162,21 @@ button.work.freel{
   }
   button.work.freel{
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro{
+    font-size: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .intro{
+    font-size: 50px !important;
+  }
+  .footer {
+    margin-left: 20% !important;
   }
 }
 

@@ -46,6 +46,10 @@
     padding-bottom: 0;
 }
 
+.testi-carousel-item .card {
+    margin-bottom: 10px;
+}
+
 .testimonial-container li a {
     color: #1B3180;
 }
@@ -108,6 +112,31 @@
   transition-timing-function: linear;
 }
 
+.founded-item img {
+    width: -webkit-fill-available;
+}
+
 .founded-fade .founded-inner .active {
   opacity: 1;
+}
+
+.carousel-inner.header img {
+    width: 100%;
+}
+
+.jobs .card-body {
+    height: auto;
+}
+
+.intro  {
+    height: 201px;
+    left: 203px;
+    top: 1018px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    
+    color: #6A6A6A;
 }

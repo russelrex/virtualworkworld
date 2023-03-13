@@ -63,8 +63,8 @@
               <a href="/candidates/search">
             <button type="button" class="btn candidate-btn" placement="left"
               ngbTooltip="Find your dream remote role, working right from your home.">
+              <i class="fa-solid fa-arrow-left"></i>
               Find a Job
-              <i class="fa-solid fa-arrow-right"></i>
             </button>
             </a>
           </div>
@@ -73,7 +73,7 @@
             <button type="button" class="btn employer-btn" placement="right"
                 ngbTooltip="Hire vetted talent worldwide, for a fraction of the time and cost.">
                 Find Talent
-              <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right"></i>
             </button>
             </a>
           </div>
@@ -81,7 +81,7 @@
       </div>
       <div class="container mt-5">
         <div id="animatedHeaderFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner text-center">
+          <div class="carousel-inner header text-center">
             <div class="carousel-item active" data-bs-interval="1500">
               <img src="../../../assets/img/background/state=1.png">
             </div>
@@ -129,6 +129,15 @@
         </div>
       </div>
     </section>
+
+    <section class="page-section">
+      <div class="container text-center">
+          <div class="col-sm-12 intro">
+            “We take the endless searching
+            overuse of staff resources and high costs out of the remote hiring process.“
+          </div>
+      </div>
+  </section>
 
     <section class="page-section" *ngIf="!isLoading">
       <div class="container" style="max-width: 1600px;">
@@ -183,6 +192,70 @@
         </div>
       </div>
   </section>
+
+  <section class="page-section mt-5" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="founded" style="text-align: start;">Services</h2>
+        </div>
+      </div>
+      <div class="row services">
+        <div class="col">
+          <div class="card first" placement="end"
+          ngbTooltip="We put the ease in hiring overseas. We won't let something small like 8,000 miles stop you from getting the 
+          best person or team in place. We carefully screen and security check every candidate, so you can feel confident in the 
+          people you choose. Hire one, two or three remote employees, or build a team of 20+! We've got the expertise to help you 
+          with all of your hiring needs.">
+            <div class="card-body">
+              <img src="../../../assets/img/background/laptop.png">
+              <h4 class="sub-heading-services mt-3">Remote hiring - Hire people and teams in one place.</h4>
+              <div class="row" style="padding-top: 10rem;">
+              </div>
+            </div>
+          </div>              
+        </div>
+
+        <div class="col">
+          <div class="card second" placement="top"
+          ngbTooltip="Remote hiring can be a headache when creating contracts and policies to protect your employees in different
+          parts of the world. Our specialist team will tell you what you need and create polished international contracts and 
+          policies that are both compliant, fair to the candidates and fit your company's culture. Avoid hefty fines and keep your
+          employees happy!">
+            <div class="card-body">
+              <img src="../../../assets/img/background/file-medical.png">
+              <h4 class="sub-heading-services mt-3">Create internationally compliant contracts and policies</h4>
+              <div class="row" style="padding-top: 3rem;">
+              </div>
+            </div>
+          </div>              
+        </div>
+
+        <div class="col">
+          <div class="card third" placement="start"
+          ngbTooltip="The hard work doesn't stop with your hire. We also create engaging Employee and Customer Onboarding 
+          Experiences, shape your Customer Support, Sales and Marketing departments, build your Tech Stack and advise on the 
+          best digital growth solutions for your company's success.">
+            <div class="card-body">
+              <img src="../../../assets/img/background/plus-circle.png">
+              <h4 class="sub-heading-services mt-3">Additional Services</h4>
+              <div class="row" style="padding-top: 8rem;">
+              </div>
+            </div>
+          </div>              
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <a href="/employers/services">
+          <button type="button" class="btn founded-btn">Work with us
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <section class="page-section about-us mt-5">
     <div class="container">
@@ -208,7 +281,7 @@
         </div>
         <div class="col">
           <div id="subHeaderAnimated" class="carousel slide carousel-fade founded-fade" data-bs-ride="carousel">
-            <div class="carousel-inner founded-inner text-center">
+            <div class="carousel-inner founded-inner">
               <div class="carousel-item founded-item active" data-bs-interval="3000">
                 <img src="../../../assets/img/background/vww_photogrida.png">
               </div>
@@ -233,92 +306,28 @@
     </div>
   </section>
 
-<section class="page-section mt-5" id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="founded" style="text-align: start;">Services</h2>
+  <section class="page-section" style="margin-top: -30px;">
+    <div class="container">
+      <div class="card banner">
+        <div class="card-body" style="padding-top: 75px;">
+          <h2 class="trusted">Tech Stack</h2>
+        </div>
+        <div class="container mb-4">
+          <marquee id='scroll_news' scrollamount="5" loop="infinite">
+            <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+            <ul class="marquee-content">
+              <li class="marquee-item">
+                <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png">
+              </li>
+              <li class="marquee-item">
+                <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png" style="padding-left: 30px;">
+              </li>
+            </ul></div>
+          </marquee>
+        </div>
       </div>
     </div>
-    <div class="row services">
-      <div class="col">
-        <div class="card first" placement="left"
-        ngbTooltip="We put the ease in hiring overseas. We won't let something small like 8,000 miles stop you from getting the 
-        best person or team in place. We carefully screen and security check every candidate, so you can feel confident in the 
-        people you choose. Hire one, two or three remote employees, or build a team of 20+! We've got the expertise to help you 
-        with all of your hiring needs.">
-          <div class="card-body">
-            <img src="../../../assets/img/background/laptop.png">
-            <h4 class="sub-heading-services mt-3">Remote hiring - Hire people and teams in one place.</h4>
-            <div class="row" style="padding-top: 10rem;">
-            </div>
-          </div>
-        </div>              
-      </div>
-
-      <div class="col">
-        <div class="card second" placement="top"
-        ngbTooltip="Remote hiring can be a headache when creating contracts and policies to protect your employees in different
-        parts of the world. Our specialist team will tell you what you need and create polished international contracts and 
-        policies that are both compliant, fair to the candidates and fit your company's culture. Avoid hefty fines and keep your
-        employees happy!">
-          <div class="card-body">
-            <img src="../../../assets/img/background/file-medical.png">
-            <h4 class="sub-heading-services mt-3">Create internationally compliant contracts and policies</h4>
-            <div class="row" style="padding-top: 3rem;">
-            </div>
-          </div>
-        </div>              
-      </div>
-
-      <div class="col">
-        <div class="card third" placement="right"
-        ngbTooltip="The hard work doesn't stop with your hire. We also create engaging Employee and Customer Onboarding 
-        Experiences, shape your Customer Support, Sales and Marketing departments, build your Tech Stack and advise on the 
-        best digital growth solutions for your company's success.">
-          <div class="card-body">
-            <img src="../../../assets/img/background/plus-circle.png">
-            <h4 class="sub-heading-services mt-3">Additional Services</h4>
-            <div class="row" style="padding-top: 8rem;">
-            </div>
-          </div>
-        </div>              
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col text-center">
-        <a href="/employers/services">
-        <button type="button" class="btn founded-btn">Work with us
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="page-section" style="margin-top: -30px;">
-  <div class="container">
-    <div class="card banner">
-      <div class="card-body" style="padding-top: 75px;">
-        <h2 class="trusted">Tech Stack</h2>
-      </div>
-      <div class="container mb-4">
-        <marquee id='scroll_news' scrollamount="5" loop="infinite">
-          <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
-          <ul class="marquee-content">
-            <li class="marquee-item">
-              <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png">
-            </li>
-            <li class="marquee-item">
-              <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png" style="padding-left: 30px;">
-            </li>
-          </ul></div>
-        </marquee>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 <section class="page-section mt-3">
   <div class="container">
@@ -648,7 +657,7 @@
       </div>
     </div>
     <ul ngbNav #nav="ngbNav" class="nav-tabs testimonial-container">
-      <li [ngbNavItem]="2">
+      <!-- <li [ngbNavItem]="2">
         <a ngbNavLink><p>What our companies say</p></a>
         <ng-template ngbNavContent>
           <div class="row testimonial-bg-color">
@@ -756,7 +765,7 @@
             </div>
           </div>
         </ng-template>
-      </li>
+      </li> -->
       <li [ngbNavItem]="1">
         <a ngbNavLink><p>What our candidates say</p></a>
         <ng-template ngbNavContent>
@@ -764,7 +773,7 @@
             <div class="carousel-inner">
               <div class="testi-carousel-item carousel-item active">
                 <div class="row testimonial-bg-color">
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -798,7 +807,7 @@
                       </div>
                     </div>              
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -832,7 +841,7 @@
                       </div>
                     </div>              
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -868,7 +877,7 @@
               </div>
               <div class="testi-carousel-item carousel-item">
                 <div class="row testimonial-bg-color">
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -900,7 +909,7 @@
                       </div>
                     </div>              
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -935,7 +944,7 @@
                       </div>
                     </div>              
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4 col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <div class="d-flex justify-content-center mb-4">
@@ -943,7 +952,6 @@
                             class="rounded-circle shadow-1-strong" width="150" height="150" />
                         </div>
                         <h5 class="mb-3">Renai Paria</h5>
-                        <!-- <h6 class="text-primary mb-3">Web Developer</h6> -->
                         <p class="px-xl-3">
                           <i class="fas fa-quote-left pe-2"></i>Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you and your team I will be starting my dream job next month.
                           #remoteworking #WFH #amazingwomen #dreamsdocometrue
@@ -991,86 +999,86 @@
   </div>
 </section>
 <section class="page-section" id="contact">
-    <div class="container">
-        <div class="row">
-          <div class="col" style="text-align: start;">
-            <img src="../../../assets/img/logos/vww-logo-white.png">
-            <div class="row mt-4">
-              <div class="col">
-                Candidates
-              </div>
-              <div class="col">
-                Employers
-              </div>
-              <div class="col">
-                Company
-              </div>
+  <div class="container">
+      <div class="row">
+        <div class="col" style="text-align: start;">
+          <img src="../../../assets/img/logos/vww-logo-white.png">
+          <div class="row mt-4">
+            <div class="col">
+              Candidates
             </div>
-            <div class="row mt-4">
-              <div class="col">
-                Why apply
-              </div>
-              <div class="col">
-                Why work for us
-              </div>
-              <div class="col">
-                about
-              </div>
+            <div class="col">
+              Employers
             </div>
-            <div class="row mt-4">
-              <div class="col">
-                Search Jobs
-              </div>
-              <div class="col">
-                Employer services
-              </div>
-              <div class="col">
-                Blog
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col">
-              </div>
-              <div class="col">
-                Pricing
-              </div>
-              <div class="col">
-                Contact
-              </div>
+            <div class="col">
+              Company
             </div>
           </div>
-          <div class="col" style="text-align: center;">
-            <div class="row" style="padding-top: 85px;">
+          <div class="row mt-4">
+            <div class="col">
+              Why apply
+            </div>
+            <div class="col">
+              Why work for us
+            </div>
+            <div class="col">
+              about
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              Search Jobs
+            </div>
+            <div class="col">
+              Employer services
+            </div>
+            <div class="col">
+              Blog
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+            </div>
+            <div class="col">
+              Pricing
+            </div>
+            <div class="col">
+              Contact
+            </div>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <div class="row" style="padding-top: 85px;">
+            <div class="col">
+              Subscribe to our newsletter
+            </div>
+            <div class="row mt-4 footer" style="text-align: -webkit-center;">
               <div class="col">
-                Subscribe to our newsletter
-              </div>
-              <div class="row mt-4" style="text-align: -webkit-center; margin-left: 20%;">
-                <div class="col">
-                  <div class="input-group input-group-lg w-75">
-                    <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter your email address here" aria-describedby="inputGroup-sizing-lg">
-                  </div>
+                <div class="input-group input-group-lg w-75">
+                  <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter your email address here" aria-describedby="inputGroup-sizing-lg">
                 </div>
               </div>
-              <div class="row mt-4">
-                <div class="col">
-                  <button type="button" class="btn contact-submit-btn">Subscribe</button>
-                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col">
+                <button type="button" class="btn contact-submit-btn">Subscribe</button>
               </div>
-              <div class="row mt-5">
-                <div class="col">
-                  Follow us on social media
-                </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                Follow us on social media
               </div>
-              <div class="row mt-3">
-                <div class="col" style="margin-left: 15px;">
-                  <a href="https://www.facebook.com/groups/virtualworkworld" target="_blank"><img src="../../../assets/img/logos/Facebook.png" class="me-3"></a>
-                  <a href="https://www.linkedin.com/in/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Linkedin.png" class="me-3"></a>
-                  <a href="https://www.instagram.com/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Instagram.png" class="me-3"></a>
-                </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col" style="margin-left: 15px;">
+                <a href="https://www.facebook.com/groups/virtualworkworld" target="_blank"><img src="../../../assets/img/logos/Facebook.png" class="me-3"></a>
+                <a href="https://www.linkedin.com/in/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Linkedin.png" class="me-3"></a>
+                <a href="https://www.instagram.com/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Instagram.png" class="me-3"></a>
               </div>
             </div>
           </div>
         </div>
-    </div>
+      </div>
+  </div>
 </section>
 <!-- </div> -->

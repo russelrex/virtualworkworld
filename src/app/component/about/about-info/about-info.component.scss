@@ -1,7 +1,3 @@
-.navbar-nav li a {
-    color: white !important;
-}
-
 .section-heading {
     color: #1B3180;
     height: 350px;
@@ -24,83 +20,6 @@ h1, h2 {
     padding-top: 0;
 }
 
-.testi-carousel-item .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.testimonial-bg-color div div .card-body {
-    background-color: #F5F5F5;
-}
-
-.testimonial-nav {
-    margin-left: auto;
-}
-
-.testimonial-nav button {
-    background: none !important;
-    border: none;
-}
-
-.testi-carousel-item .row div {
-    padding-bottom: 0;
-}
-
-.jobs div.card {
-    width: auto;
-    border-radius: 15px;
-    text-align: start;
-}
-
-.jobs div.card-body {
-    margin: 22px;
-}
-
-.jobs div.card.first {
-    background: #FEEFBC;
-}
-
-.jobs div.card.second {
-    background: #D8F9F7;
-}
-
-.jobs div.card.third {
-    background: #EADCFF;
-}
-
-.jobs div.card.fourth {
-    background: #FBCBFF;
-}
-
-button.btn.founded-btn-white{
-    width: 311px;
-    height: 57px;
-    border: 2px solid #FFFFFF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 128px;
-    font-size: 24px;
-    border: 2px solid white;
-    color: white;
-}
-  
-button.btn.founded-btn-white:hover{
-    color: #32D2CC;
-    border: 2px solid #32D2CC
-}
-
-.faq .accordion-item .accordion-header .accordion-button{
-    background: none;
-    color: #1B3180;
-}
-
-.faq .accordion-item{
-    border: none;
-}
-
-.faq .accordion-item .accordion-header{
-    border-bottom: 1px solid;
-}
-
 .carousel-item div .card {
     background-color: #F5F5F5;
 }
@@ -109,14 +28,14 @@ button.btn.founded-btn-white:hover{
     width: auto !important;
 }
 
-.pb-0 {
-    padding-bottom: 0;
-}
-
-.mb-0 {
-    padding-bottom: 0;
-}
-
 .carousel-item .row div {
     padding-bottom: 0;
+}
+
+.card-body h2  {
+    text-align: start; 
+}
+
+.card-body p  {
+    text-align: justify; 
 }

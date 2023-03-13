@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.isLoading = false;
       this.routeService.navigate('/');
-    }, 1500);
+    }, 1000);
 
     setTimeout(() => {
       this.animatedHeader.nativeElement.click();
