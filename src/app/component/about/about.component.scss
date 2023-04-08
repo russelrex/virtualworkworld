@@ -2,6 +2,15 @@
     color: white !important;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: none;
+  color: red;
+}
+
+a.nav-link.nav-title.active {
+  border-bottom: 5px solid #FBCA1F !important;
+}
+
 .contact-submit-btn {
     background-color: #9BE551;
     width: 200px;
@@ -16,10 +25,61 @@
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.dropdown button:hover {
-    border-bottom: 5px solid #FBCA1F;
+div.dropdown-menu.show {
+    position: absolute;
+    width: 300px;
+    margin-top: 32px !important;
+    background: #F1F1F1;
+  }
+  
+  .dropdown-item {
+    border-bottom: 2px solid #6A6A6A !important;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e9ecef !important;
+  }
+
+  .section-heading {
+    color: #1B3180;
+    height: 350px;
+    padding-top: 150px;
 }
 
-a.nav-link.nav-title.active {
-    border-bottom: 5px solid #FBCA1F !important;
+.section-heading {
+    color: #1B3180;
+}
+
+h5 {
+    color: #6A6A6A;
+}
+
+h1, h2 {
+    color: #1B3180;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.carousel-item div .card {
+    background-color: #F5F5F5;
+}
+
+.carousel-item div div img {
+    width: auto !important;
+}
+
+.carousel-item .row div {
+    padding-bottom: 0;
+}
+
+.card-body h2  {
+    text-align: start; 
+}
+
+.card-body p  {
+    text-align: justify; 
 }

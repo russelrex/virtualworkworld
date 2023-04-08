@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav" style="background-color: #1B3180 !important;">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="../../../assets/img/logos/vww-logo-white.png" style="position: absolute;
+          width: 220px;
+          height: 60px;
+          top: 10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item">
+                    <div ngbDropdown class="d-inline-block">
+                        <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>CANDIDATES</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                          <button ngbDropdownItem routerLink="/candidates/info"><a class="nav-link nav-title"><span style="color: black;">Candidates</span></a></button>
+                          <button ngbDropdownItem routerLink="/candidates/search"><a class="nav-link nav-title"><span style="color: black;">Search</span></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div ngbDropdown class="d-inline-block">
+                        <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>EMPLOYERS</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                          <button ngbDropdownItem routerLink="/employers/info"><a class="nav-link nav-title"><span style="color: black;">Employers</span></a></button>
+                          <button ngbDropdownItem routerLink="/employers/services"><a class="nav-link nav-title"><span style="color: black;">Services</span></a></button>
+                          <button ngbDropdownItem routerLink="/employers/pricing"><a class="nav-link nav-title"><span style="color: black;">Pricing</span></a></button>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item" routerLink="/about"><a class="nav-link nav-title">About</a></li>
+                <!-- <li class="nav-item"><a class="nav-link nav-title" href="/blog;">Blog</a></li> -->
+                <li class="nav-item" routerLink="/contact"><a class="nav-link nav-title">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

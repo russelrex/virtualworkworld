@@ -8,7 +8,7 @@
 </div>
 
 <div *ngIf="!isLoading">
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav" style="background-color: white !important">
     <div class="container">
         <a class="navbar-brand" href="/">
           <img src="../../../assets/img/logos/vww-logo.png" style="position: absolute;
@@ -26,8 +26,8 @@
                   <div ngbDropdown class="d-inline-block">
                     <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>CANDIDATES</button>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates">Candidates</a></button>
-                      <button ngbDropdownItem><a class="nav-link nav-title" href="/candidates/search">Search</a></button>
+                      <button ngbDropdownItem routerLink="/candidates/info"><a class="nav-link nav-title">Candidates</a></button>
+                      <button ngbDropdownItem routerLink="/candidates/search"><a class="nav-link nav-title">Search</a></button>
                     </div>
                   </div>
                 </li>
@@ -35,14 +35,14 @@
                   <div ngbDropdown class="d-inline-block">
                     <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>EMPLOYERS</button>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers">Employers</a></button>
-                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/services">Services</a></button>
-                      <button ngbDropdownItem><a class="nav-link nav-title" href="/employers/pricing">Pricing</a></button>
+                      <button ngbDropdownItem routerLink="/employers/info"><a class="nav-link nav-title">Employers</a></button>
+                      <button ngbDropdownItem routerLink="/employers/services"><a class="nav-link nav-title">Services</a></button>
+                      <button ngbDropdownItem routerLink="/employers/pricing"><a class="nav-link nav-title">Pricing</a></button>
                     </div>
                   </div>
                 </li>
                 <li class="nav-item"><a class="nav-link nav-title" href="/about">About</a></li>
-                <li class="nav-item"><a class="nav-link nav-title" href="javascript:void(0);">Blog</a></li>
+                <!-- <li class="nav-item"><a class="nav-link nav-title" href="javascript:void(0);">Blog</a></li> -->
                 <li class="nav-item"><a class="nav-link nav-title" href="javascript:void(0);">Contact</a></li>
             </ul>
         </div>
@@ -60,22 +60,18 @@
       <div class="container job-button">
         <div class="row">
           <div class="col" style="text-align: end;">
-              <a href="/candidates/search">
             <button type="button" class="btn candidate-btn" placement="left"
-              ngbTooltip="Find your dream remote role, working right from your home.">
+              ngbTooltip="Find your dream remote role, working right from your home." routerLink="/candidates/search">
               <i class="fa-solid fa-arrow-left"></i>
               Find a Job
             </button>
-            </a>
           </div>
           <div class="col" style="text-align: start;">
-            <a href="/candidates">
             <button type="button" class="btn employer-btn" placement="right"
-                ngbTooltip="Hire vetted talent worldwide, for a fraction of the time and cost.">
+                ngbTooltip="Hire vetted talent worldwide, for a fraction of the time and cost." routerLink="/candidates/info">
                 Find Talent
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
-            </a>
           </div>
         </div>
       </div>
@@ -107,7 +103,7 @@
       </div>
     </header>
 
-    <section class="page-section" style="margin-top: -40px;">
+    <section class="page-section" style="margin-top: -60px;">
       <div class="container mt-5">
         <div class="card banner">
           <div class="card-body" style="padding-top: 50px;">
@@ -132,7 +128,7 @@
 
     <section class="page-section">
       <div class="container text-center">
-          <div class="col-sm-12 intro">
+          <div class="col-sm-12 intro" style="margin-top: -30px">
             “We take the endless searching
             overuse of staff resources and high costs out of the remote hiring process.“
           </div>
@@ -247,11 +243,9 @@
       </div>
       <div class="row mt-3">
         <div class="col text-center">
-          <a href="/employers/services">
-          <button type="button" class="btn founded-btn">Work with us
+          <button type="button" class="btn founded-btn" routerLink="/employers/services">Work with us
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-          </a>
         </div>
       </div>
     </div>
@@ -273,11 +267,9 @@
             <br><br>
             We help create compatible working relationships and remote workplace policies that bring out the best in each other and help businesses boom.
           </p>
-          <a href="/about">
-          <button type="button" class="btn founded-btn">About us
+          <button type="button" class="btn founded-btn" routerLink="/about">About us
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-          </a>
         </div>
         <div class="col">
           <div id="subHeaderAnimated" class="carousel slide carousel-fade founded-fade" data-bs-ride="carousel">
@@ -303,7 +295,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   </section>
 
   <section class="page-section" style="margin-top: -30px;">
@@ -640,11 +632,9 @@
     </div>
     
     <div class="text-center mt-3">
-      <a routerLink="/candidates/search" target="_blank">
-        <button type="button" class="btn founded-btn">Search jobs
+      <button type="button" class="btn founded-btn" routerLink="/candidates/search">Search jobs
         <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -998,87 +988,4 @@
     <div [ngbNavOutlet]="nav" class="mt-2"></div>
   </div>
 </section>
-<section class="page-section" id="contact">
-  <div class="container">
-      <div class="row">
-        <div class="col" style="text-align: start;">
-          <img src="../../../assets/img/logos/vww-logo-white.png">
-          <div class="row mt-4">
-            <div class="col">
-              Candidates
-            </div>
-            <div class="col">
-              Employers
-            </div>
-            <div class="col">
-              Company
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              Why apply
-            </div>
-            <div class="col">
-              Why work for us
-            </div>
-            <div class="col">
-              about
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              Search Jobs
-            </div>
-            <div class="col">
-              Employer services
-            </div>
-            <div class="col">
-              Blog
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-            </div>
-            <div class="col">
-              Pricing
-            </div>
-            <div class="col">
-              Contact
-            </div>
-          </div>
-        </div>
-        <div class="col" style="text-align: center;">
-          <div class="row" style="padding-top: 85px;">
-            <div class="col">
-              Subscribe to our newsletter
-            </div>
-            <div class="row mt-4 footer" style="text-align: -webkit-center;">
-              <div class="col">
-                <div class="input-group input-group-lg w-75">
-                  <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Enter your email address here" aria-describedby="inputGroup-sizing-lg">
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col">
-                <button type="button" class="btn contact-submit-btn">Subscribe</button>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col">
-                Follow us on social media
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col" style="margin-left: 15px;">
-                <a href="https://www.facebook.com/groups/virtualworkworld" target="_blank"><img src="../../../assets/img/logos/Facebook.png" class="me-3"></a>
-                <a href="https://www.linkedin.com/in/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Linkedin.png" class="me-3"></a>
-                <a href="https://www.instagram.com/virtualworkworld/" target="_blank"><img src="../../../assets/img/logos/Instagram.png" class="me-3"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</section>
-<!-- </div> -->
+<app-footer></app-footer>

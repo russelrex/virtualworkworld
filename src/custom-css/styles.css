@@ -3773,15 +3773,18 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 0;
 }
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #1e2125;
   background-color: #e9ecef;
 }
+
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #ffc800;
 }
+
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
   pointer-events: none;
@@ -4237,6 +4240,9 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
+    margin-top: 27px;
+    border-top: none;
+    border-radius: unset;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -4544,7 +4550,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .card-title {
@@ -11393,8 +11399,8 @@ p {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {

@@ -1,5 +1,5 @@
 #mainNav {
-  background-color: white !important;
+  background-color: #1B3180 !important;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   border: 2px solid #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 128px;
-  color: white;
+  color: #1B3180;
   font-size: 24px;
 }
 
@@ -337,7 +337,7 @@ button.work:focus {
   }
 }
 
-p, h1, h2, h3, h4, h5 {
+div, p, h1, h2, h3, h4, h5 {
   font-family: Figtree,Arial,sans-serif !important;
 }
 

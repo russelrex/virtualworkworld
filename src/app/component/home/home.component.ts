@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { GoogleMapsModule } from '@angular/google-maps';
 import {RouteService} from '../services/route.service';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -16,12 +14,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(private routeService: RouteService) { }
 
   ngOnInit(): void {
-    // AOS.init();
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
       this.routeService.navigate('/');
-    }, 1000);
+    }, 500);
 
     setTimeout(() => {
       this.animatedHeader.nativeElement.click();

@@ -10,7 +10,6 @@ import { EmployersComponent } from './component/employers/employers.component';
 import { EmployersInfoComponent } from './component/employers/employers-info/employers-info.component';
 import { EmployersServicesComponent } from './component/employers/employers-services/employers-services.component';
 import { EmployersPricingComponent } from './component/employers/employers-pricing/employers-pricing.component';
-import { AboutInfoComponent } from './component/about/about-info/about-info.component';
 import { AboutComponent } from './component/about/about.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { BlogInfoComponent } from './component/blog/blog-info/blog-info.component';
@@ -25,80 +24,44 @@ const routes: Routes = [
   },
   {
     path: 'candidates',
-    component: CandidatesComponent,
-    children: [
-      { path: '', redirectTo: 'info',  pathMatch:'full' },
-      {
-        path: 'info',
-        component: InfoComponent,
-      },
-      {
-        path: 'search',
-        component: SearchComponent,
-      },
-      {
-        path: 'jobs',
-        component: JobsCandidateComponent,
-      },
-    ],
+    loadChildren: () => import('./component/candidates/candidates.module').then(m => m.CandidatesModule)
   },
   {
     path: 'employers',
-    component: EmployersComponent,
-    children: [
-      { path: '', redirectTo: 'info',  pathMatch:'full' },
-      {
-        path: 'info',
-        component: EmployersInfoComponent,
-      },
-      {
-        path: 'services',
-        component: EmployersServicesComponent,
-      },
-      {
-        path: 'pricing',
-        component: EmployersPricingComponent,
-      },
-    ],
+    loadChildren: () => import('./component/employers/employers.module').then(m => m.EmployersModule)
   },
   {
     path: 'about',
     component: AboutComponent,
-    children: [
-      { path: '', redirectTo: 'info',  pathMatch:'full' },
-      {
-        path: 'info',
-        component: AboutInfoComponent,
-      },
-    ],
-  },
-  {
-    path: 'blog',
-    component: BlogComponent,
-    children: [
-      { path: '', redirectTo: 'info',  pathMatch:'full' },
-      {
-        path: 'info',
-        component: BlogInfoComponent,
-      },
-      {
-        path: 'full',
-        component: BlogFullComponent,
-      },
-      {
-        path: 'list',
-        component: BlogListsComponent,
-      },
-    ],
   },
   {
     path: 'contact',
     component: ContactComponent,
+    data: {some_data: 'some value'}
   },
-  {
-    path: 'testimonials/candidate',
-    component: TestimonialsComponent
-  },
+  // {
+  //   path: 'blog',
+  //   component: BlogComponent,
+  //   children: [
+  //     { path: '', redirectTo: 'info',  pathMatch:'full' },
+  //     {
+  //       path: 'info',
+  //       component: BlogInfoComponent,
+  //     },
+  //     {
+  //       path: 'full',
+  //       component: BlogFullComponent,
+  //     },
+  //     {
+  //       path: 'list',
+  //       component: BlogListsComponent,
+  //     },
+  //   ],
+  // },
+  // {
+  //   path: 'testimonials/candidate',
+  //   component: TestimonialsComponent
+  // },
 ];
 
 @NgModule({
