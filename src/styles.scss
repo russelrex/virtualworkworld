@@ -79,13 +79,24 @@ button.btn.founded-btn:hover{
 }
 
 .services div.card {
-  height: 400px;
+  // height: 400px;
   border-radius: 15px;
   margin-bottom: 10px;
 }
 
 .services div.card-body {
   margin: 22px;
+  cursor: pointer;
+}
+
+.services div.card-body ul {
+  margin-top: 1.5rem;
+  color: #1B3180;
+  text-align: left;
+}
+
+.services div.card-body ul li {
+  margin-top: 1rem;
 }
 
 .services div.card.first {
@@ -101,11 +112,15 @@ button.btn.founded-btn:hover{
 }
 
 .sub-heading-services {
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
   letter-spacing: 0.01em;
   color: #1B3180;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 button.btn.founded-btn.second:hover {

@@ -67,7 +67,15 @@
 }
 
 .candidate-btn{
+    color: #FBCA1F;
+    background-color: #1B3180;
+    border-color: #1B3180;
+}
+
+.candidate-btn:hover {
+  color: #1B3180;
   border-color: #1B3180;
+  background-color: transparent;
 }
 
 .dropdown button {
@@ -94,17 +102,14 @@ div.dropdown-menu.show {
     background-color: #e9ecef !important;
 }
 
-.candidate-btn:hover {
-  color: #FBCA1F;
-  background-color: #1B3180;
-}
-
 .employer-btn{
+    color: #1B3180;
+    background-color: white;
     border-color: #1B3180;
 }
 
 .employer-btn:hover {
-    color: #FBCA1F;
+    color: white;
     background-color: #1B3180;
 }
 
@@ -141,4 +146,8 @@ div.dropdown-menu.show {
     letter-spacing: 0.01em;
     
     color: #6A6A6A;
+}
+
+a.nav-link.nav-title:hover {
+    cursor: pointer;
 }
