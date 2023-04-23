@@ -1,8 +1,18 @@
 
 .contact-submit-btn {
-    background-color: #9BE551;
-    width: 200px;
-    height: 50px;
-    margin-left: 30px;
-  }
+  padding: 12.5px 0px;
+  gap: 25px;
+  width: 296px;
+  height: 48px;
+  left: calc(50% - 296px/2 + 488px);
+  top: 245px;
+  background: #9BE651;
+  border-radius: 5px;
+  color: white;
+}
+
+p, h4 {
+  font-family: 'ABeeZee' !important;
+  margin: 0 !important;
+}
   

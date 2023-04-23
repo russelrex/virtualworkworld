@@ -1,0 +1,9 @@
+@font-face {
+    font-family: ABeeZee;
+    src: url("/assets/fonts/ttf/ABeeZee-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: figtree;
+    src: url("assets/fonts/otf/Figtree-Medium.otf") format("opentype");
+  }

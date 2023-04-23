@@ -2,11 +2,6 @@
   background-color: #1B3180 !important;
 }
 
-@font-face {
-  font-family: figtree;
-  src: url(assets/fonts/otf/Figtree-Medium.otf) format("opentype");
-}
-
 .job-button div div button{ 
   width: 220px;
   height: 57px;
@@ -18,7 +13,7 @@
 }
 
 button.btn {
-  font-family: Figtree,Arial,sans-serif;
+  font-family: 'Figtree';
 }
 
 div.card.banner{
@@ -353,7 +348,7 @@ button.work:focus {
 }
 
 div, p, h1, h2, h3, h4, h5 {
-  font-family: Figtree,Arial,sans-serif !important;
+  font-family: 'Figtree' !important;
 }
 
 .trusted {
@@ -366,14 +361,14 @@ div, p, h1, h2, h3, h4, h5 {
 }
 
 .section-heading {
-  font-family: Figtree,Arial,sans-serif;
+  font-family: 'Figtree';
   font-size: 50px;
   margin: 0px 250px;
   color: white;
 }
 
 .sub-heading {
-  font-family: Figtree,Arial,sans-serif;
+  font-family: 'Figtree';
   color: white;
 }
 
@@ -382,7 +377,7 @@ div, p, h1, h2, h3, h4, h5 {
 */
 
 .sub-heading-seeker {
-  font-family: Figtree,Arial,sans-serif;
+  font-family: 'Figtree';
   color: white;
   font-weight: 700;
   font-size: 37px;

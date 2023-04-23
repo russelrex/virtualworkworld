@@ -84,7 +84,7 @@
       </div>
     </div>
 </section>
-<section class="page-section mt-5">
+<section class="candidate-section mt-5">
     <div class="container pb-4 text-center">
         <h1>What you had to say</h1>
         <h5>We've helped so many job seekers secure roles and reach their potential all around the world.</h5>
@@ -96,20 +96,14 @@
                     <div class="testi-carousel-item carousel-item active">
                       <div class="row testimonial-bg-color">
                         <div class="col">
-                          <div class="card">
+                          <div class="card" [style.height]="isExpanded1 ? '745px' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test01.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150" />
                               </div>
-                              <h5 class="mb-3">Nazireh Reis</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>I would recommend this service 1000%.
-                                I just landed a remote work job thanks to the foresight and awesome support of this team. 👏 I had gotten fed up of being stuck in traffic, stressed with zero work/life balance, hours wasted in travelling...solution, remote work!
-                                Kudos to Mrs. Jisselle for her selfless service. I'm convinced and won over....here's to a new chapter of me! Follow them and stay up to date and proative with your recruitment. You won't regret it!
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Nazireh Reis</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -126,24 +120,37 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial1">
+                                <p class="px-xl-3">
+                                  I would recommend this service 1000%. I just landed a remote work job thanks to the foresight and awesome support of this team. 👏...
+                                </p>
+                                <span (click)="showWhole1()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial1">
+                                <p class="px-xl-3">
+                                  I would recommend this service 1000%.
+                                  I just landed a remote work job thanks to the foresight and awesome support of this team. 👏 
+                                  I had gotten fed up of being stuck in traffic, stressed with zero work/life balance, hours wasted in travelling...solution, remote work!
+                                  Kudos to Mrs. Jisselle for her selfless service. I'm convinced and won over....here's to a new chapter of me! Follow them and stay up to date and proative with your recruitment. You won't regret it!
+                                </p>
+                                <span (click)="hideWhole1()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
                         <div class="col">
-                          <div class="card">
+                          <div class="card pb-3" [style.height]="isExpanded2 ? '100%' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test02.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150" />
                               </div>
-                              <h5 class="mb-3">Wendy Rampersad</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>A dynamic team, both Jisselle and Ashley epitomize professionalism and teamwork and are truly exemplars in the virtual work world.  
-                                With their unique, refreshing personal styles in interacting with the client, one is left with a sense of confidence and reassurance towards advancing one's career.                                                                                 I highly recommend this awesome team to anyone determined to transform their lives from the humdrum of a 9-5 to literally working ANYWHERE in the WORLD!                                                                              I am very excited that I connected with them and look forward to only success stories ahead.                      
-                                Thank you, Team Virtual Work World, for paying it forward.  I am motivated to one day do the same.
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Wendy Rampersad</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -160,22 +167,35 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial2">
+                                <p class="px-xl-3">
+                                  A dynamic team, both Jisselle and Ashley epitomize professionalism and teamwork and are truly exemplars in the virtual work...
+                                </p>
+                                <span (click)="showWhole2()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial2">
+                                <p class="px-xl-3">
+                                  A dynamic team, both Jisselle and Ashley epitomize professionalism and teamwork and are truly exemplars in the virtual work world. With their unique, refreshing personal styles in interacting with the client, one is left with a sense of confidence and reassurance towards advancing one's career.                                                                                 I highly recommend this awesome team to anyone determined to transform their lives from the humdrum of a 9-5 to literally working ANYWHERE in the WORLD!                                                                              I am very excited that I connected with them and look forward to only success stories ahead.                      
+                                  Thank you, Team Virtual Work World, for paying it forward.  I am motivated to one day do the same.
+                                </p>
+                                <span (click)="hideWhole2()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
                         <div class="col">
-                          <div class="card">
+                          <div class="card" [style.height]="isExpanded3 ? '645px' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test03.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150" />
                               </div>
-                              <h5 class="mb-3">Ja Ne</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>There's an old saying about the difference between a manager and a leader, "Managers do things right. Leaders do the right things." And you are both! You inspire people around you to push themselves and I am grateful for your help in finding me a job that suits me. Thank you for leading us so well. You're the best!!! 🙌🙌🙌💜💜💜
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Ja Ne</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -192,6 +212,24 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial3">
+                                <p class="px-xl-3">
+                                  There's an old saying about the difference between a manager and a leader, "Managers do things right. Leaders do the right...
+                                </p>
+                                <span (click)="showWhole3()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial3">
+                                <p class="px-xl-3">
+                                  There's an old saying about the difference between a manager and a leader, "Managers do things right. 
+                                  Leaders do the right things." And you are both! You inspire people around you to push themselves and I am grateful 
+                                  for your help in finding me a job that suits me. Thank you for leading us so well. You're the best!!! 🙌🙌🙌💜💜💜
+                                </p>
+                                <span (click)="hideWhole3()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
@@ -200,18 +238,14 @@
                     <div class="testi-carousel-item carousel-item">
                       <div class="row testimonial-bg-color">
                         <div class="col">
-                          <div class="card">
+                          <div class="card" [style.height]="isExpanded4 ? '525px' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test05.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150"/>
                               </div>
-                              <h5 class="mb-3">Aisha Jones</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>I would just like to thank Jisselle Baldwin-Todd and the the VWWC fam for helping me land an amazing opportunity!!! The process is real and WFH opportunities are tangible #letsgetit
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Aisha Jones</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -228,25 +262,35 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial4">
+                                <p class="px-xl-3">
+                                  I would just like to thank Jisselle Baldwin-Todd and the the VWWC fam for helping me land an amazing opportunity!!! The process is real...
+                                </p>
+                                <span (click)="showWhole4()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial4">
+                                <p class="px-xl-3">
+                                  I would just like to thank Jisselle Baldwin-Todd and the the VWWC fam for helping me land an amazing opportunity!!! 
+                                  The process is real and WFH opportunities are tangible #letsgetit
+                                </p>
+                                <span (click)="hideWhole4()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
                         <div class="col">
-                          <div class="card">
+                          <div class="card" [style.height]="isExpanded5 ? '525px' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test04.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150" />
                               </div>
-                              <h5 class="mb-3">Thalia BW</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>Guess what!!!
-                                I got a part time wfh job!!
-                                Jisselle thank you for offering me the opportunity! I sincerely appreciate the time you took to explain the process, your consideration and guidance.
-                                The process works people!!!!
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Thalia BW</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -263,23 +307,35 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial5">
+                                <p class="px-xl-3">
+                                  I got a part time wfh job!! Jisselle thank you for offering me the opportunity! I sincerely appreciate the time you took to explain the process,...
+                                </p>
+                                <span (click)="showWhole5()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial5">
+                                <p class="px-xl-3">
+                                  I got a part time wfh job!! Jisselle thank you for offering me the opportunity! I sincerely appreciate the time you took to explain the process, your consideration and guidance.
+                                  The process works people!!!!
+                                </p>
+                                <span (click)="hideWhole5()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
                         <div class="col">
-                          <div class="card">
+                          <div class="card" [style.height]="isExpanded6 ? '600px' : '470px'">
                             <div class="card-body">
                               <div class="d-flex justify-content-center mb-4">
                                 <img src="assets/img/testimonials/test06.jpg"
                                   class="rounded-circle shadow-1-strong" width="150" height="150" />
                               </div>
-                              <h5 class="mb-3">Renai Paria</h5>
-                              <p class="px-xl-3">
-                                <i class="fas fa-quote-left pe-2"></i>Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you and your team I will be starting my dream job next month.
-                                #remoteworking #WFH #amazingwomen #dreamsdocometrue
-                                <i class="fas fa-quote-right pe-2"></i>
-                              </p>
-                              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                              <h4>Renai Paria</h4>
+                              <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -296,6 +352,23 @@
                                   <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                               </ul>
+                              <div [hidden]="hideInitial6">
+                                <p class="px-xl-3">
+                                  Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you...
+                                </p>
+                                <span (click)="showWhole6()" class="see-more">
+                                  see more
+                                </span>
+                              </div>
+                              <div [hidden]="!hideInitial6">
+                                <p class="px-xl-3">
+                                  Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you and your team I will be starting my dream job next month.
+                                  #remoteworking #WFH #amazingwomen #dreamsdocometrue
+                                </p>
+                                <span (click)="hideWhole6()" class="see-more">
+                                  see less
+                                </span>
+                              </div>
                             </div>
                           </div>              
                         </div>
@@ -307,13 +380,13 @@
             </li>
             <li class="testimonial-nav pb-3">
               <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <img src="../../../assets/img/utilities/arrow-left.png" width="100%">
+                <img src="../../../assets/img/utilities/vector-left.png" width="100%">
               </button>
               <button>
-                <img src="../../../assets/img/utilities/dot.png" width="100%">
+                <!-- <img src="../../../assets/img/utilities/dot.png" width="100%"> -->
               </button>
               <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <img src="../../../assets/img/utilities/arrow-right.png" width="100%">
+                <img src="../../../assets/img/utilities/vector-right.png" width="100%">
               </button>
             </li>
           </ul>
@@ -329,305 +402,174 @@
       </div>
     </div>
     <div class="row jobs">
-      <div class="col-6">
-        <div class="card first">
+      <div class="col-3">
+        <div class="card admin">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/bank.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/home/admin.png">
+            <div class="row title mt-2">
+                <h5>Administrative</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Administrative Assitants / Office Managers
+                <br><br>
+                Executive Assistants
+                <br><br>
+                Virtual Assistants
+                <br><br>
+                Data Entry
+              </span>
             </div>
           </div>
-        </div>              
+        </div>   
       </div>
-      <div class="col-6">
-        <div class="card second">
+      <div class="col-3">
+        <div class="card customer">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/chat-dots.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/chat-dots.png">
+            <div class="row title mt-2">
+                <h5>Customer Service /
+                  Account Management</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Customer Success /
+                Customer Support
+                <br><br>
+                Account Managers
+                <br><br>
+                Technical Support
+                <br><br>
+                Hotel & Hospitality
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card third">
+      <div class="col-3">
+        <div class="card creative">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/palette.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/creative.png">
+            <div class="row title mt-2">
+                <h5>Creative & Design</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Content Writers
+                <br><br>
+                Creatives / Designers
+                <br><br>
+                UX/UI Designers
+                <br><br>
+                Video Editor /
+                Animation / Motion Graphics
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card fourth">
+      <div class="col-3">
+        <div class="card engineering">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/clipboard-data.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/laptop.png">
+            <div class="row title mt-2">
+                <h5>Engineering & Development</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Mobile App Development
+                <br><br>
+                Mobile App Engineers
+                <br><br>
+                Software Developers
+                <br><br>
+                Web Development
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card second">
+      <div class="col-3">
+        <div class="card creative">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/laptop.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/content.png">
+            <div class="row title mt-2">
+                <h5>Content & Marketing</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Email Marketing
+                <br><br>
+                Digital Growth
+                <br><br>
+                Social Media Managers
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card third">
+      <div class="col-3">
+        <div class="card engineering">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/cart-check.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/cart-check.png">
+            <div class="row title mt-2">
+                <h5>Lead Generation & Sales</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Appointment Setters
+                <br><br>
+                Insurance / Medical Representatives
+                <br><br>
+                Lead Generation
+                <br><br>
+                Sales Executive
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card fourth">
+      <div class="col-3">
+        <div class="card admin">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/people.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/people.png">
+            <div class="row title mt-2">
+                <h5>Management</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Managers/Department Heads
+                <br><br>
+                Human Resources
+              </span>
             </div>
           </div>
-        </div>              
+        </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card first">
+      <div class="col-3">
+        <div class="card customer">
           <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/receipt.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
+            <img src="../../../assets/img/jobs/bank.png">
+            <div class="row title mt-2">
+                <h5>Accounting & Finance</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Accountant
+                <br><br>
+                Medical Billing Specialist
+              </span>
             </div>
           </div>
-        </div>              
-      </div>
-      <div class="col-6 mt-4">
-        <div class="card first">
-          <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/truck.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>              
-      </div>
-      <div class="col-6 mt-4">
-        <div class="card second">
-          <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/code-square.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>              
-      </div>
-      <div class="col-6 mt-4">
-        <div class="card third">
-          <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/cpu.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>              
-      </div>
-      <div class="col-6 mt-4">
-        <div class="card fourth">
-          <div class="card-body">
-            <div class="row">
-                <div class="col-2 text-center pt-2">
-                  <a routerLink="/candidates/jobs" target="_blank">
-                    <img src="../../../assets/img/jobs/globe.png">
-                  </a>
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col">
-                      Accounting & Finance
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      Sample Position A
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>              
+        </div>
       </div>
     </div>
     

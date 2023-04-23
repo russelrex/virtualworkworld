@@ -29,8 +29,27 @@ h1 {
     margin-right: 0;
 }
 
-.testimonial-bg-color div div .card-body {
+.testimonial-bg-color div .card {
+    padding: 30px;
+    gap: 10px;
+    width: 404px;
+    height: 470px;
     background-color: #F5F5F5;
+    border: none;
+    border-radius: 15px;
+}
+
+.testimonial-bg-color div .card .card-body p {
+    font-family: 'ABeeZee' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #6A6A6A;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .testimonial-nav {
@@ -44,32 +63,6 @@ h1 {
 
 .testi-carousel-item .row div {
     padding-bottom: 0;
-}
-
-.jobs div.card {
-    width: auto;
-    border-radius: 15px;
-    text-align: start;
-}
-
-.jobs div.card-body {
-    margin: 22px;
-}
-
-.jobs div.card.first {
-    background: #FEEFBC;
-}
-
-.jobs div.card.second {
-    background: #D8F9F7;
-}
-
-.jobs div.card.third {
-    background: #EADCFF;
-}
-
-.jobs div.card.fourth {
-    background: #FBCBFF;
 }
 
 button.btn.founded-btn-white{
@@ -99,4 +92,112 @@ button.btn.founded-btn-white:hover{
 
 .faq .accordion-item .accordion-header{
     border-bottom: 1px solid;
+}
+
+.see-more {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: #1B3180;
+}
+
+.candidate-section h1, h4, h5 {
+    font-family: 'ABeeZee' !important;
+}
+
+.candidate-section h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1B3180;
+    margin-bottom: 2.5rem;
+}
+
+.candidate-section h5 {
+    width: 1272px;
+    height: 25px;
+    left: 121px;
+    top: 173px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #6A6A6A;
+}
+
+.candidate-section h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #1B3180;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.testimonial-container {
+    border: none;
+}
+
+.jobs .card {
+    height: 345px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px 10px 20px;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.card img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.title h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    align-items: center;
+    text-align: center;
+    color: #1B3180;
+}
+
+.content span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    display: flex;
+    text-align: center;
+    color: #1B3180; 
+    justify-content: center;   
+}
+
+.admin {
+    background-color: #E0F8F7;
+    border: 2px solid #88DDDC;
+}
+
+.customer {
+    background-color: #FAEFBE;
+    border: 2px solid #E7C02B;
+}
+
+.creative {
+    background-color: #F2CEFE;
+    border: 2px solid #E186FC;
+}
+
+.engineering {
+    background-color: #E7DDFE;
+    border: 2px solid #A884FC;
 }

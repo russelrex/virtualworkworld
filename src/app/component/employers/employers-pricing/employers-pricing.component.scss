@@ -4,6 +4,10 @@
     padding-top: 150px;
 }
 
+h5, h1, h3 {
+    font-family: 'ABeeZee' !important;
+}
+
 h5 {
     color: #6A6A6A;
 }
@@ -90,6 +94,10 @@ button.btn.founded-btn-white:hover{
     text-align: center;
     color: white;
     height: 200px;
+} 
+
+.pricing-v2-details {
+    align-items: end;
 }
 
 .curve-arrow {
