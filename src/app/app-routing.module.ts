@@ -39,33 +39,10 @@ const routes: Routes = [
     component: ContactComponent,
     data: {some_data: 'some value'}
   },
-  // {
-  //   path: 'blog',
-  //   component: BlogComponent,
-  //   children: [
-  //     { path: '', redirectTo: 'info',  pathMatch:'full' },
-  //     {
-  //       path: 'info',
-  //       component: BlogInfoComponent,
-  //     },
-  //     {
-  //       path: 'full',
-  //       component: BlogFullComponent,
-  //     },
-  //     {
-  //       path: 'list',
-  //       component: BlogListsComponent,
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: 'testimonials/candidate',
-  //   component: TestimonialsComponent
-  // },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
