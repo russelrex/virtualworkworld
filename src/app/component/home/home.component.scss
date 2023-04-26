@@ -134,14 +134,14 @@ div.dropdown-menu.show {
 }
 
 .intro  {
-    height: 201px;
+    height: 150px;
     left: 203px;
     top: 1018px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 0.01em;
-    
+    font-size: 45px !important;
     color: #6A6A6A;
 }
 
@@ -264,3 +264,42 @@ a.nav-link.nav-title:hover {
     text-decoration-line: underline;
     color: #1B3180;
 }
+
+.services img {
+    height: 150px;
+}
+
+.tech-stack-blurb {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #6A6A6A;
+}
+
+.carousel-indicators button {
+background-color: black !important;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    .services .card {
+        height: 93%;
+    }
+
+    .small-dev {
+        margin: auto;
+    }
+} 
+
+@media (min-width:801px) and (min-width:1025px) and (min-width:1281px)  {
+
+  }
+  
+  @media only screen and (max-width: 600px) {
+
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+  }

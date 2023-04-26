@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="container mt-5">
-        <div id="animatedHeaderFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="animatedHeaderFade" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner header text-center">
             <div class="carousel-item active" data-bs-interval="1500">
               <img src="../../../assets/img/background/state=1.png">
@@ -111,7 +111,8 @@
           </div>
           <div class="container mb-4">
             <marquee id='scroll_news' scrollamount="5" loop="infinite">
-              <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+              <!-- <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"> -->
+              <div>
               <ul class="marquee-content">
                 <li class="marquee-item">
                   <img class="marquee-image" src="../../../assets/img/banner/moving-banners.png">
@@ -192,18 +193,14 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="founded" style="text-align: start;">Services</h2>
+          <h2 class="founded" style="text-align: center;">Services</h2>
         </div>
       </div>
       <div class="row services">
-        <div class="col">
-          <div class="card first" placement="end"
-          ngbTooltip="We put the ease in hiring overseas. We won't let something small like 8,000 miles stop you from getting the 
-          best person or team in place. We carefully screen and security check every candidate, so you can feel confident in the 
-          people you choose. Hire one, two or three remote employees, or build a team of 20+! We've got the expertise to help you 
-          with all of your hiring needs.">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="card first">
             <div class="card-body text-center" routerLink="/employers/info">
-              <img src="../../../assets/img/home/laptop.png">
+              <img src="../../../assets/img/home/laptop.png"/>
               <h4 class="sub-heading-services mt-4">Hassle-Free <br>
                 Offshore Hiring
               </h4>
@@ -223,15 +220,11 @@
           </div>              
         </div>
 
-        <div class="col">
-          <div class="card second" placement="top"
-          ngbTooltip="Remote hiring can be a headache when creating contracts and policies to protect your employees in different
-          parts of the world. Our specialist team will tell you what you need and create polished international contracts and 
-          policies that are both compliant, fair to the candidates and fit your company's culture. Avoid hefty fines and keep your
-          employees happy!">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="card second">
             <div class="card-body text-center" routerLink="/employers/info">
               <img src="../../../assets/img/home/note.png">
-              <h4 class="sub-heading-services mt-4">Internationally <br> Compliant and Fair Policies
+              <h4 class="sub-heading-services mt-4">Internationally Compliant Contracts & Policies
               </h4>
               <ul>
                 <li>
@@ -249,11 +242,8 @@
           </div>              
         </div>
 
-        <div class="col">
-          <div class="card third" placement="start"
-          ngbTooltip="The hard work doesn't stop with your hire. We also create engaging Employee and Customer Onboarding 
-          Experiences, shape your Customer Support, Sales and Marketing departments, build your Tech Stack and advise on the 
-          best digital growth solutions for your company's success.">
+        <div class="col-xl-4 col-lg-6 col-md-6 small-dev">
+          <div class="card third">
             <div class="card-body text-center" routerLink="/employers/pricing">
               <img src="../../../assets/img/home/battery.png">
               <h4 class="sub-heading-services mt-4">Comprehensive <br>
@@ -299,7 +289,7 @@
             <br><br>
             We help create compatible working relationships and remote workplace policies that bring out the best in each other and help businesses boom.
           </p>
-          <button type="button" class="btn founded-btn" routerLink="/about">About us
+          <button type="button" class="btn founded-btn mt-4" routerLink="/about">About us
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -330,10 +320,10 @@
     </div>  
   </section>
 
-  <section class="page-section" style="margin-top: -30px;">
+  <section class="page-section mt-4">
     <div class="container">
       <div class="card banner">
-        <div class="card-body" style="padding-top: 75px;">
+        <div class="card-body">
           <h2 class="trusted">Tech Stack</h2>
         </div>
         <div class="container mb-4">
@@ -348,16 +338,21 @@
               </li>
             </ul></div>
           </marquee>
+          <p class="tech-stack-blurb">
+            We are knowledgeable in various tools and software. We can assist you in streamlining your digital office operations and achieving
+            success through our trusted technology partners, providing seamless communication, collaboration, and productivity.
+            From project management to customer support, our tech stack has got you covered!
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-<section class="page-section mt-3">
+<section class="page-section mt-4">
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="founded" style="text-align: center;">Jobs</h2>
+        <h2 class="founded" style="text-align: center;">Remote Job Opportunities Available</h2>
       </div>
     </div>
     <div class="row jobs">
@@ -388,8 +383,7 @@
           <div class="card-body">
             <img src="../../../assets/img/jobs/chat-dots.png">
             <div class="row title mt-2">
-                <h5>Customer Service /
-                  Account Management</h5>
+                <h5 style="font-size: 18px;">Customer Service & Support</h5>
                 <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
             </div>
             <div class="row content">
@@ -402,6 +396,48 @@
                 Technical Support
                 <br><br>
                 Hotel & Hospitality
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card engineering">
+          <div class="card-body">
+            <img src="../../../assets/img/jobs/cart-check.png">
+            <div class="row title mt-2">
+                <h5>Lead Generation & Sales</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Appointment Setters
+                <br><br>
+                Insurance / Medical Representatives
+                <br><br>
+                Lead Generation
+                <br><br>
+                Sales Executive
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card creative">
+          <div class="card-body">
+            <img src="../../../assets/img/jobs/content.png">
+            <div class="row title mt-2">
+                <h5>Content & Marketing</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Email Marketing
+                <br><br>
+                Digital Growth
+                <br><br>
+                Social Media Managers
               </span>
             </div>
           </div>
@@ -435,7 +471,7 @@
           <div class="card-body">
             <img src="../../../assets/img/jobs/laptop.png">
             <div class="row title mt-2">
-                <h5>Engineering & Development</h5>
+                <h5 style="font-size: 18px;">Engineering & Development</h5>
                 <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
             </div>
             <div class="row content">
@@ -447,66 +483,6 @@
                 Software Developers
                 <br><br>
                 Web Development
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card creative">
-          <div class="card-body">
-            <img src="../../../assets/img/jobs/content.png">
-            <div class="row title mt-2">
-                <h5>Content & Marketing</h5>
-                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
-            </div>
-            <div class="row content">
-              <span>
-                Email Marketing
-                <br><br>
-                Digital Growth
-                <br><br>
-                Social Media Managers
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card engineering">
-          <div class="card-body">
-            <img src="../../../assets/img/jobs/cart-check.png">
-            <div class="row title mt-2">
-                <h5>Lead Generation & Sales</h5>
-                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
-            </div>
-            <div class="row content">
-              <span>
-                Appointment Setters
-                <br><br>
-                Insurance / Medical Representatives
-                <br><br>
-                Lead Generation
-                <br><br>
-                Sales Executive
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card admin">
-          <div class="card-body">
-            <img src="../../../assets/img/jobs/people.png">
-            <div class="row title mt-2">
-                <h5>Management</h5>
-                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
-            </div>
-            <div class="row content">
-              <span>
-                Managers/Department Heads
-                <br><br>
-                Human Resources
               </span>
             </div>
           </div>
@@ -530,9 +506,27 @@
           </div>
         </div>
       </div>
+      <div class="col-3">
+        <div class="card admin">
+          <div class="card-body">
+            <img src="../../../assets/img/jobs/people.png">
+            <div class="row title mt-2">
+                <h5>Management</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Managers/Department Heads
+                <br><br>
+                Human Resources
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div class="text-center mt-3">
+    <div class="text-center mt-5">
       <button type="button" class="btn founded-btn" routerLink="/candidates/search">Search jobs
         <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -540,22 +534,17 @@
   </div>
 </section>
 
-<section class="community-section mt-3">
+<section class="community-section mt-5">
   <div class="container">
-    <!-- <div class="row">
-      <div class="col">
-        <h2 class="founded" style="text-align: center;">Jobs</h2>
-      </div>
-    </div> -->
     <div>
       <img src="../../../assets/img/home/community.png">                
     </div>
     <div class="be-part-comm">
       <h1>Be Part of Our Community</h1>
       <p>Our Facebook group is the perfect place to connect, collaborate, and learn from one another. Don't miss out!</p>
-      <button type="button" class="btn founded-btn" routerLink="#">
+      <a href="https://www.facebook.com/groups/263877431523726" target="_blank"><button type="button" class="btn founded-btn mt-3" routerLink="#">
         Click Here To Join!
-      </button>
+      </button></a>
     </div>
   </div>
 </section>
@@ -859,7 +848,6 @@
               <img src="../../../assets/img/utilities/vector-left.png" width="100%">
             </button>
             <button>
-              <!-- <img src="../../../assets/img/utilities/dot.png" width="100%"> -->
             </button>
             <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
               <img src="../../../assets/img/utilities/vector-right.png" width="100%">
@@ -869,245 +857,4 @@
         <div [ngbNavOutlet]="nav" class="mt-2"></div>
   </div>
 </section>
-
-<!-- <section class="page-section mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="founded" style="text-align: start;">Testimonials</h2>
-      </div>
-    </div>
-    <ul ngbNav #nav="ngbNav" class="nav-tabs testimonial-container">
-      <li [ngbNavItem]="1">
-        <a ngbNavLink><p>What our candidates say</p></a>
-        <ng-template ngbNavContent>
-          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div class="testi-carousel-item carousel-item active">
-                <div class="row testimonial-bg-color">
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test01.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150" />
-                        </div>
-                        <h5 class="mb-3">Nazireh Reis</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>I would recommend this service 1000%.
-                          I just landed a remote work job thanks to the foresight and awesome support of this team. 👏 I had gotten fed up of being stuck in traffic, stressed with zero work/life balance, hours wasted in travelling...solution, remote work!
-                          Kudos to Mrs. Jisselle for her selfless service. I'm convinced and won over....here's to a new chapter of me! Follow them and stay up to date and proative with your recruitment. You won't regret it!
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test02.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150" />
-                        </div>
-                        <h5 class="mb-3">Wendy Rampersad</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>A dynamic team, both Jisselle and Ashley epitomize professionalism and teamwork and are truly exemplars in the virtual work world.  
-                          With their unique, refreshing personal styles in interacting with the client, one is left with a sense of confidence and reassurance towards advancing one's career.                                                                                 I highly recommend this awesome team to anyone determined to transform their lives from the humdrum of a 9-5 to literally working ANYWHERE in the WORLD!                                                                              I am very excited that I connected with them and look forward to only success stories ahead.                      
-                          Thank you, Team Virtual Work World, for paying it forward.  I am motivated to one day do the same.
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test03.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150" />
-                        </div>
-                        <h5 class="mb-3">Ja Ne</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>There's an old saying about the difference between a manager and a leader, "Managers do things right. Leaders do the right things." And you are both! You inspire people around you to push themselves and I am grateful for your help in finding me a job that suits me. Thank you for leading us so well. You're the best!!! 🙌🙌🙌💜💜💜
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                </div>
-              </div>
-              <div class="testi-carousel-item carousel-item">
-                <div class="row testimonial-bg-color">
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test05.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150"/>
-                        </div>
-                        <h5 class="mb-3">Aisha Jones</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>I would just like to thank Jisselle Baldwin-Todd and the the VWWC fam for helping me land an amazing opportunity!!! The process is real and WFH opportunities are tangible #letsgetit
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test04.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150" />
-                        </div>
-                        <h5 class="mb-3">Thalia BW</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>Guess what!!!
-                          I got a part time wfh job!!
-                          Jisselle thank you for offering me the opportunity! I sincerely appreciate the time you took to explain the process, your consideration and guidance.
-                          The process works people!!!!
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-center mb-4">
-                          <img src="assets/img/testimonials/test06.jpg"
-                            class="rounded-circle shadow-1-strong" width="150" height="150" />
-                        </div>
-                        <h5 class="mb-3">Renai Paria</h5>
-                        <p class="px-xl-3">
-                          <i class="fas fa-quote-left pe-2"></i>Jisselle I want to thank you so much,you're an amazing person & great career advisor, been wanting a WFH job all my life & finally thanks to you and your team I will be starting my dream job next month.
-                          #remoteworking #WFH #amazingwomen #dreamsdocometrue
-                          <i class="fas fa-quote-right pe-2"></i>
-                        </p>
-                        <ul class="list-unstyled d-flex justify-content-center mb-0">
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>              
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-      </li>
-      <li class="testimonial-nav">
-        <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <img src="../../../assets/img/utilities/arrow-left.png" width="100%">
-        </button>
-        <button>
-          <img src="../../../assets/img/utilities/dot.png" width="100%">
-        </button>
-        <button class="" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <img src="../../../assets/img/utilities/arrow-right.png" width="100%">
-        </button>
-      </li>
-    </ul>
-    <div [ngbNavOutlet]="nav" class="mt-2"></div>
-  </div>
-</section> -->
 <app-footer></app-footer>
