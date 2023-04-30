@@ -19,3 +19,13 @@ p, h4 {
 p {
   cursor: pointer;
 }
+
+.footer-comm {
+  text-align: end;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-comm {
+      text-align: center;
+  }
+}

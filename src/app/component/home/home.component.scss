@@ -39,8 +39,6 @@
 .testimonial-bg-color div .card {
     padding: 30px;
     gap: 10px;
-    width: 404px;
-    height: 470px;
     background-color: #F5F5F5;
     border: none;
     border-radius: 15px;
@@ -126,7 +124,7 @@ div.dropdown-menu.show {
 }
 
 .carousel-inner.header img {
-    width: 100%;
+    // width: 100%;
 }
 
 .jobs .card-body {
@@ -134,14 +132,11 @@ div.dropdown-menu.show {
 }
 
 .intro  {
-    height: 150px;
-    left: 203px;
-    top: 1018px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 0.01em;
-    font-size: 45px !important;
+    font-size: 45px;
     color: #6A6A6A;
 }
 
@@ -200,7 +195,7 @@ a.nav-link.nav-title:hover {
 }
 
 .jobs .card {
-    height: 345px;
+    height: 100%;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 30px 10px 20px;
@@ -217,7 +212,7 @@ a.nav-link.nav-title:hover {
 .title h5 {
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 130%;
     align-items: center;
     text-align: center;
@@ -278,8 +273,52 @@ a.nav-link.nav-title:hover {
     color: #6A6A6A;
 }
 
+.tech-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1B3180;
+}
+
 .carousel-indicators button {
-background-color: black !important;
+    background-color: black !important;
+}
+
+.tech-stach-section {
+    display: flex;
+    padding: 80px 0 80px 0;
+    background: linear-gradient(75.5deg, rgba(184, 191, 216, 0.2) 18.48%, rgba(232, 234, 242, 0.2) 86.22%), #F5F6FA;
+}
+
+.tech-hr {
+    width: 50%;
+    height: 2px;
+    background: #B8BFD8;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.candidate-section {
+    background: rgba(27, 49, 128, 0.1);
+    padding-bottom: 50px;
+}
+
+// .heading-bg img {
+//     width: 100%;
+// }
+
+.heading-bg {
+    background-image: url("../../../assets/img/background/Rectangle.png");
+    height: 100%;
+}
+
+.sub-heading-bg {
+    background-image: url("../../../assets/img/background/Map-1.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -294,12 +333,73 @@ background-color: black !important;
 
 @media (min-width:801px) and (min-width:1025px) and (min-width:1281px)  {
 
-  }
+}
   
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .intro {
+        font-size: 18px;
+    }
+    
+    .services div.card {
+        width: 90%;
+        margin: auto;
+    }
 
-  }
-  
-  @media only screen and (min-width: 600px) {
+    .found-sm {
+        margin-top: 2rem;
+    }
+    
+    .col-3 {
+        width: 50%;
+    }
 
-  }
+    .tech-title {
+        font-size: 30px;
+    }
+
+    .tech-stack-blurb {
+        font-size: 18px;
+        padding: 0 25px 0 25px;
+    }
+
+    .title h5 {
+        font-size: 16px;
+    }
+    
+    .content span {
+        font-size: 14px; 
+    }
+
+    .jobs .card {
+        padding: 20px 0 0 0;
+    }
+
+    .be-part-comm {
+        margin-top: -80px;
+        padding: 0 20px 0 20px;
+    }
+
+    .be-part-comm h1 {
+        font-size: 22px;
+    }
+    
+    .be-part-comm p {
+        font-size: 12px;
+    }
+
+    .trusted-inner img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .founded-small {
+        padding: 0 30px 0 30px;
+    }
+
+    .head-trans img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+}

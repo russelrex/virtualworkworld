@@ -8,7 +8,7 @@
 </div>
 
 <div *ngIf="!isLoading">
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav" id="mainNav" style="background-color: white !important">
+<nav class="navbar navbar-expand-lg navbar-dark main-nav" id="mainNav" style="background-color: white !important">
     <div class="container">
         <a class="navbar-brand" href="/">
           <img src="../../../assets/img/logos/vww-logo.png" style="position: absolute;
@@ -48,70 +48,73 @@
         </div>
     </div>
 </nav>
-  <!-- Masthead-->
-  <header class="masthead">
-      <div class="container mb-5">
-        <div class="text-center">
-          <h1 class="section-heading">Remote working,<br> done right.</h1>
-          <br>
-          <h4 class="sub-heading">No swiping or scrolling. Just the best, vetted candidates and companies in one place.</h4>
-        </div>
-      </div>
-      <div class="container job-button">
-        <div class="row">
-          <div class="col" style="text-align: end;">
-            <button type="button" class="btn candidate-btn" placement="left"
-              ngbTooltip="Find your dream remote role, working right from your home." routerLink="/candidates/search">
-              <i class="fa-solid fa-arrow-left"></i>
-              Find a Job
-            </button>
-          </div>
-          <div class="col" style="text-align: start;">
-            <button type="button" class="btn employer-btn" placement="right"
-                ngbTooltip="Hire vetted talent worldwide, for a fraction of the time and cost." routerLink="/candidates/info">
-                Find Talent
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+    <section class="heading-section">
+      <div class="heading-bg">
+        <div class="container mb-5">
+          <div class="text-center" style="padding-top: 100px">
+            <h1 class="section-heading">Remote working,<br> done right.</h1>
+            <br>
+            <h4 class="sub-heading">No swiping or scrolling. Just the best, vetted candidates and companies in one place.</h4>
           </div>
         </div>
-      </div>
-      <div class="container mt-5">
-        <div id="animatedHeaderFade" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner header text-center">
-            <div class="carousel-item active" data-bs-interval="1500">
-              <img src="../../../assets/img/background/state=1.png">
+        <div class="container job-button">
+          <div class="row">
+            <div class="col" style="text-align: end;">
+              <button type="button" class="btn candidate-btn" placement="left"
+                ngbTooltip="Find your dream remote role, working right from your home." routerLink="/candidates/search">
+                <i class="fa-solid fa-arrow-left"></i>
+                Find a Job
+              </button>
             </div>
-            <div class="carousel-item" data-bs-interval="1500">
-              <img src="../../../assets/img/background/state=2.png">
-            </div>
-            <div class="carousel-item" data-bs-interval="1500">
-              <img src="../../../assets/img/background/state=3.png">
-            </div>
-            <div class="carousel-item" data-bs-interval="1500">
-              <img src="../../../assets/img/background/state=4.png">
+            <div class="col" style="text-align: start;">
+              <button type="button" class="btn employer-btn" placement="right"
+                  ngbTooltip="Hire vetted talent worldwide, for a fraction of the time and cost." routerLink="/candidates/info">
+                  Find Talent
+                  <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#animatedHeaderFade" data-bs-slide="prev" hidden>
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" #animatedHeader data-bs-target="#animatedHeaderFade" data-bs-slide="next" hidden>
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
-    </header>
 
-    <section class="page-section" style="margin-top: -60px;">
-      <div class="container mt-5">
+        <div class="row" style="padding-top: 50px; padding-bottom: 5px">
+          <div id="animatedHeaderFade" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner header text-center head-trans">
+              <div class="carousel-item active" data-bs-interval="1500">
+                <img src="../../../assets/img/background/state=1.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="../../../assets/img/background/state=2.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="../../../assets/img/background/state=3.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="../../../assets/img/background/state=4.png">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#animatedHeaderFade" data-bs-slide="prev" hidden>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" #animatedHeader data-bs-target="#animatedHeaderFade" data-bs-slide="next" hidden>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+  
+    <section class="page-section mt-4" style="margin-top: -60px;">
+      <div class="container">
         <div class="card banner">
           <div class="card-body" style="padding-top: 50px;">
             <h2 class="trusted">Trusted By</h2>
           </div>
           <div class="container mb-4">
             <marquee id='scroll_news' scrollamount="5" loop="infinite">
-              <!-- <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"> -->
               <div>
               <ul class="marquee-content">
                 <li class="marquee-item">
@@ -127,16 +130,16 @@
       </div>
     </section>
 
-    <section class="page-section">
-      <div class="container text-center">
-          <div class="col-sm-12 intro" style="margin-top: -30px">
+    <section class="page-section" style="background: #E0F8F7; padding: 50px;">
+      <div class="container text-center" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
+          <div class="col-sm-12 intro">
             “We take the endless searching, overuse of staff resources, and high costs out of the offshore hiring process.”
           </div>
       </div>
   </section>
 
-    <section class="page-section" *ngIf="!isLoading">
-      <div class="container" style="max-width: 1600px;">
+    <section class="page-section mt-5" *ngIf="!isLoading">
+      <div class="container" style="max-width: 1600px;" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
           <div class="row text-center">
             <div id="descriptionCarousel" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
@@ -147,7 +150,7 @@
                 <button type="button" data-bs-target="#descriptionCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
 
-              <div class="carousel-inner">
+              <div class="carousel-inner trusted-inner">
                 <div class="carousel-item active">
                   <div class="row align-items-start">
                     <img src="../../../assets/img/about/desc-01.png">
@@ -189,15 +192,15 @@
       </div>
   </section>
 
-  <section class="page-section mt-5" id="services">
-    <div class="container">
-      <div class="row">
+  <section class="page-section mt-5" id="services" style="background: #F7F8FC;">
+    <div class="container" data-aos-delay="50" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
+      <div class="row mt-5">
         <div class="col">
           <h2 class="founded" style="text-align: center;">Services</h2>
         </div>
       </div>
       <div class="row services">
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
           <div class="card first">
             <div class="card-body text-center" routerLink="/employers/info">
               <img src="../../../assets/img/home/laptop.png"/>
@@ -220,10 +223,10 @@
           </div>              
         </div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
           <div class="card second">
             <div class="card-body text-center" routerLink="/employers/info">
-              <img src="../../../assets/img/home/note.png">
+              <img src="../../../assets/img/home/note-02.png">
               <h4 class="sub-heading-services mt-4">Internationally Compliant Contracts & Policies
               </h4>
               <ul>
@@ -242,7 +245,7 @@
           </div>              
         </div>
 
-        <div class="col-xl-4 col-lg-6 col-md-6 small-dev">
+        <div class="col-xl-4 col-lg-6 col-md-6 small-dev mb-3">
           <div class="card third">
             <div class="card-body text-center" routerLink="/employers/pricing">
               <img src="../../../assets/img/home/battery.png">
@@ -263,7 +266,7 @@
           </div>              
         </div>
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3 mb-4">
         <div class="col text-center">
           <button type="button" class="btn founded-btn" routerLink="/employers/services">Work with us
             <i class="fa-solid fa-arrow-right"></i>
@@ -274,9 +277,9 @@
   </section>
   
   <section class="page-section about-us mt-5">
-    <div class="container">
+    <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
       <div class="row">
-        <div class="col">
+        <div class="col founded-small">
           <h2 class="founded" style="text-align: start;">Founded on fairness</h2>
           <p class="founded-details">
             We put people first.
@@ -293,7 +296,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <div class="col">
+        <div class="col found-sm">
           <div id="subHeaderAnimated" class="carousel slide carousel-fade founded-fade" data-bs-ride="carousel">
             <div class="carousel-inner founded-inner">
               <div class="carousel-item founded-item active" data-bs-interval="3000">
@@ -320,16 +323,22 @@
     </div>  
   </section>
 
-  <section class="page-section mt-4">
-    <div class="container">
+  <section class="tech-stach-section mt-4">
+    <div class="container m-auto" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="card banner">
         <div class="card-body">
-          <h2 class="trusted">Tech Stack</h2>
+          <h2 class="tech-title">We can help build your company's Tech Stack</h2>
         </div>
         <div class="container mb-4">
+          <p class="tech-stack-blurb">
+            We've handpicked the best tools and software to assist you in building your company's tech stack to optimize and streamline your
+            digital office operations. We'd love to help you achieve success through our trusted technology partners, providing seamless communication,
+            collaboration, and productivity. From project management platforms to customer relationship management systems our tech stack has got you covered!
+          </p>
+          <hr class="tech-hr mb-5">
           <marquee id='scroll_news' scrollamount="5" loop="infinite">
             <div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
-            <ul class="marquee-content">
+            <ul class="marquee-content mt-5">
               <li class="marquee-item">
                 <img class="marquee-image" src="../../../assets/img/banner/tech-stack.png">
               </li>
@@ -338,25 +347,20 @@
               </li>
             </ul></div>
           </marquee>
-          <p class="tech-stack-blurb">
-            We are knowledgeable in various tools and software. We can assist you in streamlining your digital office operations and achieving
-            success through our trusted technology partners, providing seamless communication, collaboration, and productivity.
-            From project management to customer support, our tech stack has got you covered!
-          </p>
         </div>
       </div>
     </div>
   </section>
 
 <section class="page-section mt-4">
-  <div class="container">
+  <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <div class="row">
       <div class="col">
-        <h2 class="founded" style="text-align: center;">Remote Job Opportunities Available</h2>
+        <h2 class="founded" style="text-align: center;">Available Offshore Job Opportunities</h2>
       </div>
     </div>
     <div class="row jobs">
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card admin">
           <div class="card-body">
             <img src="../../../assets/img/home/admin.png">
@@ -378,12 +382,12 @@
           </div>
         </div>   
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card customer">
           <div class="card-body">
             <img src="../../../assets/img/jobs/chat-dots.png">
             <div class="row title mt-2">
-                <h5 style="font-size: 18px;">Customer Service & Support</h5>
+                <h5>Customer Service & Support</h5>
                 <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
             </div>
             <div class="row content">
@@ -401,7 +405,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card engineering">
           <div class="card-body">
             <img src="../../../assets/img/jobs/cart-check.png">
@@ -423,7 +427,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card creative">
           <div class="card-body">
             <img src="../../../assets/img/jobs/content.png">
@@ -443,7 +447,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card creative">
           <div class="card-body">
             <img src="../../../assets/img/jobs/creative.png">
@@ -466,12 +470,12 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card engineering">
           <div class="card-body">
             <img src="../../../assets/img/jobs/laptop.png">
             <div class="row title mt-2">
-                <h5 style="font-size: 18px;">Engineering & Development</h5>
+                <h5>Engineering & Development</h5>
                 <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
             </div>
             <div class="row content">
@@ -488,7 +492,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card customer">
           <div class="card-body">
             <img src="../../../assets/img/jobs/bank.png">
@@ -506,7 +510,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3 mb-3">
         <div class="card admin">
           <div class="card-body">
             <img src="../../../assets/img/jobs/people.png">
@@ -535,9 +539,9 @@
 </section>
 
 <section class="community-section mt-5">
-  <div class="container">
+  <div class="container" data-aos-delay="500" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <div>
-      <img src="../../../assets/img/home/community.png">                
+      <img src="../../../assets/img/home/community.png" style="width: 100%;">                
     </div>
     <div class="be-part-comm">
       <h1>Be Part of Our Community</h1>
@@ -550,8 +554,11 @@
 </section>
 
 <section class="candidate-section mt-5">
-  <div class="container pb-4 text-center">
-      <h1>Testimonials</h1>
+  <div class="container pb-4 text-center" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <div class="row mt-5">
+      <h2 class="founded mt-5">What you had to say</h2>
+      <p class="tech-stack-blurb">We’ve helped so many job seekers secure roles and reach their potential all around the world. </p>
+    </div>
       <ul ngbNav #nav="ngbNav" class="nav-tabs testimonial-container">
           <li [ngbNavItem]="1">
             <ng-template ngbNavContent>
@@ -560,7 +567,7 @@
                   <div class="testi-carousel-item carousel-item active">
                     <div class="row testimonial-bg-color">
                       <div class="col">
-                        <div class="card" [style.height]="isExpanded4 ? '525px' : '470px'">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test05.jpg"
@@ -605,7 +612,7 @@
                         </div>              
                       </div>
                       <div class="col">
-                        <div class="card" [style.height]="isExpanded5 ? '525px' : '470px'">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test04.jpg"
@@ -650,7 +657,7 @@
                         </div>              
                       </div>
                       <div class="col">
-                        <div class="card" [style.height]="isExpanded6 ? '600px' : '470px'">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test06.jpg"
@@ -700,7 +707,7 @@
                     <div class="row testimonial-bg-color">
                       
                       <div class="col">
-                        <div class="card" [style.height]="isExpanded1 ? '745px' : '470px'">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test01.jpg"
@@ -747,7 +754,7 @@
                         </div>              
                       </div>
                       <div class="col">
-                        <div class="card pb-3" [style.height]="isExpanded2 ? '100%' : '470px'">
+                        <div class="card pb-3">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test02.jpg"
@@ -792,7 +799,7 @@
                         </div>              
                       </div>
                       <div class="col">
-                        <div class="card" [style.height]="isExpanded3 ? '645px' : '470px'">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test03.jpg"

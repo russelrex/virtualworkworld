@@ -18,7 +18,7 @@ button.btn {
 
 div.card.banner{
   border: none;
-  height: 250px;
+  background-color: transparent;
 }
 
 .seeker-section {
@@ -74,13 +74,11 @@ button.btn.founded-btn:hover{
 }
 
 .services div.card {
-  height: 670px;
+  height: 100%;
   border-radius: 15px;
-  margin-bottom: 10px;
 }
 
 .services div.card-body {
-  margin: 22px;
   cursor: pointer;
 }
 
@@ -176,15 +174,9 @@ button.work.freel{
 }
 
 @media only screen and (max-width: 600px) {
-  .intro{
-    font-size: 35px !important;
-  }
 }
 
 @media only screen and (min-width: 600px) {
-  .intro{
-    font-size: 50px !important;
-  }
   .footer {
     margin-left: 20% !important;
   }
