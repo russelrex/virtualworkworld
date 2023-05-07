@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { JobsComponent } from './component/jobs/jobs.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+    path: 'jobs',
+    loadChildren: () => import('./component/jobs/jobs.module').then(m => m.JobsModule)
   },
   {
     path: 'contact',

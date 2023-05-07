@@ -15,6 +15,7 @@ import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './component/jobs/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     EmployersInfoComponent,
     EmployersPricingComponent,
     EmployersServicesComponent,
+    AdminComponent,
     AboutComponent,
     ContactComponent,
     HeaderComponent,

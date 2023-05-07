@@ -116,7 +116,7 @@ h1, h2 {
 }
 
 .first {
-    height: 500px;
+    height: 100%;
     background: #E0F8F7;
     border: 2px solid #87DBDA;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -124,9 +124,25 @@ h1, h2 {
 }
 
 .second {
-    height: 500px;
+    height: 100%;
     background: #E7DDFE;
     border: 2px solid #A884FB;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px
+}
+
+.third {
+    height: 100%;
+    background: #FAEFBE;
+    border: 2px solid #E7C02B;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px
+}
+
+.fourth {
+    height: 100%;
+    background: #F2CEFE;
+    border: 2px solid #E186FC;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px
 }

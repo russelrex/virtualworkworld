@@ -42,6 +42,7 @@
                   </div>
                 </li>
                 <li class="nav-item" routerLink="/about"><a class="nav-link nav-title">About Us</a></li>
+                <li class="nav-item" routerLink="/jobs"><a class="nav-link nav-title">Jobs</a></li>
                 <!-- <li class="nav-item"><a class="nav-link nav-title" href="/blog;">Blog</a></li> -->
                 <li class="nav-item" routerLink="/contact"><a class="nav-link nav-title">Contact</a></li>
             </ul>
@@ -77,20 +78,24 @@
         </div>
 
         <div class="row" style="padding-top: 50px; padding-bottom: 5px">
-          <div id="animatedHeaderFade" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner header text-center head-trans">
-              <div class="carousel-item active" data-bs-interval="1500">
-                <img src="../../../assets/img/background/state=1.png">
-              </div>
-              <div class="carousel-item" data-bs-interval="1500">
-                <img src="../../../assets/img/background/state=2.png">
-              </div>
-              <div class="carousel-item" data-bs-interval="1500">
-                <img src="../../../assets/img/background/state=3.png">
-              </div>
-              <div class="carousel-item" data-bs-interval="1500">
-                <img src="../../../assets/img/background/state=4.png">
-              </div>
+          <div id="animatedHeaderFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="container animated-header-bg">
+                 <div class="carousel-inner header text-center head-trans">
+                  <div class="carousel-item animated bounceInUp active" data-bs-interval="500">
+                  </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="2000" style="margin: 40px 0 0 -115px;">
+                    <img src="../../../assets/img/background/animate-01.png">
+                  </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="2000" style="margin: 5% 0 0 25%;">
+                    <img src="../../../assets/img/background/animate-02.png">
+                  </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="2000" style=" text-align: start; margin: 5% 0 0 15%;">
+                    <img src="../../../assets/img/background/animate-03.png">
+                  </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="2000" style="margin: 13% 0 0 10%;">
+                    <img src="../../../assets/img/background/animate-04.png">
+                  </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#animatedHeaderFade" data-bs-slide="prev" hidden>
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,7 +107,6 @@
             </button>
           </div>
         </div>
-
       </div>
       
     </section>
@@ -118,10 +122,10 @@
               <div>
               <ul class="marquee-content">
                 <li class="marquee-item">
-                  <img class="marquee-image" src="../../../assets/img/banner/moving-banners.png">
+                  <img class="marquee-image" src="../../../assets/img/banner/Rolling-Banner.png">
                 </li>
                 <li class="marquee-item">
-                  <img class="marquee-image" src="../../../assets/img/banner/moving-banners.png" style="padding-left: 30px;">
+                  <img class="marquee-image" src="../../../assets/img/banner/Rolling-Banner.png" style="padding-left: 30px;">
                 </li>
               </ul></div>
             </marquee>
@@ -284,7 +288,7 @@
           <p class="founded-details">
             We put people first.
             <br><br>
-            Unlike other remote hiring platforms, we don't make any money off upcharges, or take a slice of employee earnings.
+            Unlike other remote hiring platforms, we don't make any money off upcharges, or take a slice of contractor earnings.
             <br><br>
             Why? Because it's the right thing to do, and it's the best thing for your business too.
             <br><br>
@@ -352,7 +356,43 @@
     </div>
   </section>
 
-<section class="page-section mt-4">
+  <section class="page-section mt-4">
+    <div class="container" data-aos-delay="500" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <div class="row">
+        <div class="col">
+          <h2 class="founded" style="text-align: center;">Client Solutions</h2>
+        </div>
+      </div>
+      <div class="row jobs">
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-01.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-02.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-03.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-04.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-05.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-06.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-07.png">
+        </div>
+        <div class="col-3 mb-3">
+          <img src="../../../assets/img/home/client-08.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="page-section mt-4" style="background: #F7F8FC;">
   <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <div class="row">
       <div class="col">
@@ -754,7 +794,7 @@
                         </div>              
                       </div>
                       <div class="col">
-                        <div class="card pb-3">
+                        <div class="card">
                           <div class="card-body">
                             <div class="d-flex justify-content-center mb-4">
                               <img src="assets/img/testimonials/test02.jpg"
@@ -836,6 +876,423 @@
                                 There's an old saying about the difference between a manager and a leader, "Managers do things right. 
                                 Leaders do the right things." And you are both! You inspire people around you to push themselves and I am grateful 
                                 for your help in finding me a job that suits me. Thank you for leading us so well. You're the best!!! 🙌🙌🙌💜💜💜
+                              </p>
+                              <span (click)="hideWhole3()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi-carousel-item carousel-item">
+                    <div class="row testimonial-bg-color">
+                      
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/maria.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Maria Chirino</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial1">
+                              <p class="px-xl-3">
+                                Hello Members, I would personally like to extend my gratitude to Mrs. Jisselle Baldwin-Todd for her kind referral.  Thank you...
+                              </p>
+                              <span (click)="showWhole1()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial1">
+                              <p class="px-xl-3">
+                                Hello Members, I would personally like to extend my gratitude to Mrs. Jisselle Baldwin-Todd for her kind referral. 
+                                Thank you for recognizing my abilities, and for matching me up with that job you referred me to. I appreciate your
+                                thoughtfulness and positivity. Thank you again. Wish me luck. 
+                              </p>
+                              <span (click)="hideWhole1()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/reanna.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Raeanna Browne</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial2">
+                              <p class="px-xl-3">
+                                I just want to say thank you to Jisselle Baldwin-Todd and her team! She is truly an amazing person and great at what she does. She has helped...
+                              </p>
+                              <span (click)="showWhole2()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial2">
+                              <p class="px-xl-3">
+                                I just want to say thank you to Jisselle Baldwin-Todd and her team! She is truly an amazing person and great at what she does.
+                                She has helped me get a new job and I am so grateful! I will be starting soon and I owe it to her and her team. Her referrals are golden! 🌞
+                              </p>
+                              <span (click)="hideWhole2()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/safiya.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Safiya O'Brian</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial3">
+                              <p class="px-xl-3">
+                                God is an awesome God. Thanks to Jiselle and her team for granting me a remote job. Keep praying for that opportunity and it will...
+                              </p>
+                              <span (click)="showWhole3()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial3">
+                              <p class="px-xl-3">
+                                God is an awesome God. Thanks to Jiselle and her team for granting me a remote job. Keep praying for that opportunity and it will come.
+                                Jiselle is the most kindest sweetheart,keep up the great work.
+                              </p>
+                              <span (click)="hideWhole3()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi-carousel-item carousel-item">
+                    <div class="row testimonial-bg-color">
+                      
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/haze.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Haze Jambaro</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial1">
+                              <p class="px-xl-3">
+                                I am really thankful to you Jisselle Baldwin-Todd for helping me get a job offer in a tremendous and an amazing company anyone...
+                              </p>
+                              <span (click)="showWhole1()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial1">
+                              <p class="px-xl-3">
+                                I am really thankful to you Jisselle Baldwin-Todd for helping me get a job offer in a tremendous and an amazing company anyone would 
+                                wish for.😊 Please continue to help job seekers to land a great job like you did for me. You are incredible and I'll be forever 
+                                grateful! More power to you and to your team..
+                              </p>
+                              <span (click)="hideWhole1()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/nneka.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Nneka Holder</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div>
+                              <p class="px-xl-3">
+                                I just want to say a huge thank you to Jisselle and her amazing team for helping me land a full time work from home job.The process works people!
+                              </p>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/kwesi.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Kwesi Vincent</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial3">
+                              <p class="px-xl-3">
+                                It may seem daunting at first as a newbie, but this process works. Can't wait to enjoy the benefits. Huge shoutout to Jisselle and the...
+                              </p>
+                              <span (click)="showWhole3()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial3">
+                              <p class="px-xl-3">
+                                It may seem daunting at first as a newbie, but this process works. Can't wait to enjoy the benefits. Huge shoutout to Jisselle and the
+                                Virtual Work World team for sticking through with me! Keep applying and keep trying, employers are willing to hire you.
+                              </p>
+                              <span (click)="hideWhole3()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testi-carousel-item carousel-item">
+                    <div class="row testimonial-bg-color">
+                      
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/dan.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Dan Dan</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial1">
+                              <p class="px-xl-3">
+                                🌟🌟🌟🌟🌟 Thank you for being awesome, Jisselle Baldwin-Todd and the team, for the smooth job application process and fantastic training...
+                              </p>
+                              <span (click)="showWhole1()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial1">
+                              <p class="px-xl-3">
+                                🌟🌟🌟🌟🌟 Thank you for being awesome, Jisselle Baldwin-Todd and the team, for the smooth job application process and fantastic training
+                                experience. I am beyond blessed to now have a full-time work-from-home job in an incredible company that values its people, treating us not 
+                                just as workers but as family.  ❤️ God bless you all, and continue to be a blessing to others! 🤘
+                              </p>
+                              <span (click)="hideWhole1()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/cath.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>Catherine Puso La Rosa</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial2">
+                              <p class="px-xl-3">
+                                I want to express my gratitude to Jisselle Baldwin-Todd, D, Ch, GL, and the entire Virtual Work World Team for helping me find a fantastic job. There are not...
+                              </p>
+                              <span (click)="showWhole2()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial2">
+                              <p class="px-xl-3">
+                                I want to express my gratitude to Jisselle Baldwin-Todd, D, Ch, GL, and the entire Virtual Work World Team for helping me find a fantastic job.
+                                There are not enough words to express. I will always be grateful that you accepted me as a member of your community and I am so happy that I got to
+                                know your team. Continue assisting all other job seekers in getting hired. Always be a blessing to others. To all applicants: keep moving forward, keep
+                                growing, maintain your optimism, and never stop learning while you're waiting. Always keep in mind that there is something out there for each of us.
+                                Trust the process. It will take you to where you belong. Simply wait until your moment comes. You will encounter it surprisingly. Once more, many thanks Virtual Work World Team!
+                              </p>
+                              <span (click)="hideWhole2()" class="see-more">
+                                see less
+                              </span>
+                            </div>
+                          </div>
+                        </div>              
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-center mb-4">
+                              <img src="assets/img/testimonials/john.jpg"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h4>John Jeffrey Manuel</h4>
+                            <ul class="list-unstyled d-flex justify-content-center">
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                              <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                              </li>
+                            </ul>
+                            <div [hidden]="hideInitial3">
+                              <p class="px-xl-3">
+                                Many Many thanks to Ms. Jisselle Baldwin-Todd and to the whole team of Virtual Work World Community! Thank you very much for helping...
+                              </p>
+                              <span (click)="showWhole3()" class="see-more">
+                                see more
+                              </span>
+                            </div>
+                            <div [hidden]="!hideInitial3">
+                              <p class="px-xl-3">
+                                Many Many thanks to Ms. Jisselle Baldwin-Todd and to the whole team of Virtual Work World Community! Thank you very much for 
+                                helping and guiding me land on that wonderful and a once in a lifetime opportunity to have a work from home set up, flexible time
+                                and most importantly, a company that I really believe that is going to be "The next REAL DEAL" . Im praying for a thousand folds of power,
+                                opportunities and success to the whole team, because you guys are really a channel of BLESSING to a lot of people here! Thank you! (Salamat po!)
                               </p>
                               <span (click)="hideWhole3()" class="see-more">
                                 see less

@@ -1,217 +1,44 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-  <!-- style="background-color: #c797eb;" -->
-  <div class="container">
-      <!-- <a class="navbar-brand" href="home#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
-      <a class="navbar-brand" href="home"><span style="color: deeppink;">Virtual Work World</span></a>
-  </div>
-</nav>
-<router-outlet></router-outlet>
-<section class="page-section mt-5" id="jobs">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-heading text-uppercase">Jobs</h2>
-        </div>
-        <div class="row text-center">
-            <div class="col-lg-4 col-sm-6 mb-5">
-                <div class="portfolio-item">
-                    <a routerLink="/jobs/accounting" target="_blank">
-                      <i class="fas fa-university fa-3x"></i>
-                    </a>
-                    <div class="portfolio-caption">
-                     <div class="portfolio-caption-heading">Accounting & Finance</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-5">
-              <div class="portfolio-item">
-                  <a routerLink="/jobs/call-center" target="_blank">
-                    <i class="fas fa-headset fa-3x"></i>
-                  </a>
-                  <div class="portfolio-caption">
-                    <div class="portfolio-caption-heading">Call Center & Customer Service</div>
-                  </div>
-              </div>
-          </div> 
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/creative" target="_blank">
-                  <i class="fas fa-paint-brush fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Creative & Marketing</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/data-entry" target="_blank">
-                  <i class="fas fa-warehouse fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Data Entry</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/engineering" target="_blank">
-                  <i class="fas fa-desktop fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Engineering & Technology</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/e-commerce" target="_blank">
-                  <i class="fas fa-book-medical fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">E-commerce</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/human-resource" target="_blank">
-                  <i class="fas fa-user-friends fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Human Resources</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/lead" target="_blank">
-                  <i class="fas fa-tools fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Lead generation</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/logistics" target="_blank">
-                  <i class="fas fa-truck fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Logistic</div>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-            <div class="portfolio-item">
-                <a routerLink="/jobs/programming" target="_blank">
-                  <i class="fas fa-shopping-bag fa-3x"></i>
-                </a>
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption-heading">Programming</div>
-                </div>
-            </div>
-        </div>
-          <div class="col-lg-4 col-sm-6 mb-5">
-              <div class="portfolio-item">
-                  <a routerLink="/jobs/software" target="_blank">
-                      <i class="fas fa-network-wired fa-3x"></i>
-                  </a>
-                  <div class="portfolio-caption">
-                    <div class="portfolio-caption-heading">Software Development</div>
-                  </div>
-              </div>
-          </div>
-            <div class="col-lg-4 col-sm-6 mb-5">
-                <div class="portfolio-item">
-                    <a routerLink="/jobs/web" target="_blank">
-                      <i class="fas fa-window-maximize fa-3x"></i>
-                    </a>
-                    <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Web Development</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<app-header></app-header>
+<section class="page-section mt-4">
+  <div class="container" style="margin-top: 100px">
+    <div class="row">
+      <div class="col">
+        <h2 class="founded" style="text-align: center;">Available Offshore Job Opportunities</h2>
+      </div>
     </div>
+    <div class="row jobs">
+      <div class="col-3 mb-3">
+        <div class="card admin" routerLink="/jobs/admin">
+          <div class="card-body">
+            <img src="../../../assets/img/home/admin.png">
+            <div class="row title mt-2">
+                <h5>Administrative</h5>
+                <hr class="mt-2" style="border: 2px solid rgba(136, 221, 220, 0.5);">
+            </div>
+            <div class="row content">
+              <span>
+                Logistics & Operations Administrator
+                <br><br>
+                Administrative Assitants / Office Managers
+                <br><br>
+                Executive Assistants
+                <br><br>
+                Virtual Assistants
+                <br><br>
+                Data Entry
+              </span>
+            </div>
+          </div>
+        </div>   
+      </div>
+      
+    </div>
+    
+    <div class="text-center mt-5">
+      <button type="button" class="btn founded-btn" routerLink="/candidates/search">Search jobs
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
 </section>
-<section class="page-section" id="contact">
-  <div class="container">
-      <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-      <!-- * * * * * * * * * * * * * * *-->
-      <!-- * * SB Forms Contact Form * *-->
-      <!-- * * * * * * * * * * * * * * *-->
-      <!-- This form is pre-integrated with SB Forms.-->
-      <!-- To make this form functional, sign up at-->
-      <!-- https://startbootstrap.com/solution/contact-forms-->
-      <!-- to get an API token!-->
-      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-          <div class="row align-items-stretch mb-5">
-              <div class="col-md-6">
-                  <div class="form-group">
-                      <!-- Name input-->
-                      <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                      <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                  </div>
-                  <div class="form-group">
-                      <!-- Email address input-->
-                      <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                      <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                      <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                  </div>
-                  <div class="form-group mb-md-0">
-                      <!-- Phone number input-->
-                      <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                      <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="form-group form-group-textarea mb-md-0">
-                      <!-- Message input-->
-                      <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                      <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                  </div>
-              </div>
-          </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
-          <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center text-white mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br />
-                  <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-              </div>
-          </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
-          <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-          <!-- Submit Button-->
-          <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-      </form>
-  </div>
-</section>  
-<!-- Footer-->
-<footer class="footer py-4">
-  <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-          <div class="col-lg-4 my-3 my-lg-0">
-              <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-              <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-              <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-          </div>
-      </div>
-  </div>
-</footer>
+<app-footer></app-footer>
