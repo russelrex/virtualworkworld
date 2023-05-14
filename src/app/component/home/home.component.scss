@@ -310,15 +310,49 @@ a.nav-link.nav-title:hover {
 // }
 
 .heading-bg {
-    background-image: url("../../../assets/img/background/Rectangle.png");
+    background-image: url("../../../assets/img/background/Rectangle.webp");
     height: 100%;
 }
 
 .sub-heading-bg {
-    background-image: url("../../../assets/img/background/Map-1.png");
+    background-image: url("../../../assets/img/background/Map-1.webp");
     height: 400px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.bounce-01 {
+    margin: 40px 0 0 -115px;
+}
+
+.bounce-02 {
+    margin: 5% 0 0 25%;
+}
+
+.bounce-03 {
+    text-align: start;
+    margin: 5% 0 0 15%;
+}
+
+.bounce-04 {
+    margin: 13% 0 0 10%;
+}
+
+.animated-header-bg {
+    background-image: url("../../../assets/img/background/Map-1.webp");
+    height: 375px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
+}
+
+.animated-header-bg img {
+    width: auto;
+}
+
+.client img {
+    width: 100%;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -395,21 +429,33 @@ a.nav-link.nav-title:hover {
     .founded-small {
         padding: 0 30px 0 30px;
     }
+    
+    .animated-header-bg {
+        height: 150px;
+    }
 
-    .head-trans img {
-        width: 100%;
+    .bounce-01 {
+        margin: 0 0 0 -34px;
+    }
+
+    .bounce-02 {
+        margin: 0 0 0 25%;
+    }
+
+    .bounce-03 {
+        margin: 0 0 0 15%;
+    }
+
+    .bounce-04 {
+        margin: 0 0 0 10%;
+    }
+
+    .animated-header-bg img {
+        width: 25%;
     }
 }
 
 @media only screen and (min-width: 600px) {
-}
-
-.animated-header-bg {
-    background-image: url("../../../assets/img/background/Map-1.png");
-    height: 375px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
 }
 
 .animated {
