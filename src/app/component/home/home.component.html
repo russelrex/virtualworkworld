@@ -52,7 +52,7 @@
     <section class="heading-section">
       <div class="heading-bg">
         <div class="container mb-5">
-          <div class="text-center" style="padding-top: 100px">
+          <div class="text-center pt-5">
             <h1 class="section-heading">Remote working,<br> done right.</h1>
             <br>
             <h4 class="sub-heading">No swiping or scrolling. Just the best, vetted candidates and companies in one place.</h4>
@@ -81,16 +81,22 @@
           <div id="animatedHeaderFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="container animated-header-bg">
                  <div class="carousel-inner header text-center head-trans">
-                  <div class="carousel-item animated bounceInUp active" data-bs-interval="500">
+                  <div class="carousel-item animated bounceInUp active" data-bs-interval="200">
                   </div>
                   <div class="carousel-item animated bounceInUp bounce-01" data-bs-interval="2000">
                     <img src="../../../assets/img/background/animate-01.webp">
                   </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="200">
+                  </div>
                   <div class="carousel-item animated bounceInUp bounce-02" data-bs-interval="2000">
                     <img src="../../../assets/img/background/animate-02.webp">
                   </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="200">
+                  </div>
                   <div class="carousel-item animated bounceInUp bounce-03" data-bs-interval="2000">
                     <img src="../../../assets/img/background/animate-03.webp">
+                  </div>
+                  <div class="carousel-item animated bounceInUp" data-bs-interval="200">
                   </div>
                   <div class="carousel-item animated bounceInUp bounce-04" data-bs-interval="2000">
                     <img src="../../../assets/img/background/animate-04.webp">
@@ -111,10 +117,10 @@
       
     </section>
   
-    <section class="page-section mt-4" style="margin-top: -60px;">
+    <section class="page-section mt-4">
       <div class="container">
         <div class="card banner">
-          <div class="card-body" style="padding-top: 50px;">
+          <div class="card-body">
             <h2 class="trusted">Trusted By</h2>
           </div>
           <div class="container mb-4">
@@ -139,10 +145,43 @@
           <div class="col-sm-12 intro">
             “We take the endless searching, overuse of staff resources, and high costs out of the offshore hiring process.”
           </div>
+          <div class="container mt-5 client-solutions-section">
+            <div class="row">
+              <div class="col">
+                <h2 class="founded" style="text-align: center;">Client Solutions</h2>
+              </div>
+            </div>
+            <div class="row client">
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-01.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-02.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-03.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-04.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-05.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-06.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-07.webp">
+              </div>
+              <div class="col-3 mb-3">
+                <img loading="lazy" src="../../../assets/img/home/client-08.webp">
+              </div>
+            </div>
+          </div>
       </div>
   </section>
 
-    <section class="page-section mt-5" *ngIf="!isLoading">
+    <!-- <section class="page-section mt-5" *ngIf="!isLoading">
       <div class="container" style="max-width: 1600px;" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
           <div class="row text-center">
             <div id="descriptionCarousel" class="carousel slide" data-bs-ride="true">
@@ -194,17 +233,68 @@
             </div>
         </div>
       </div>
+  </section> -->
+  <section class="page-section about-us mt-5">
+    <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
+      <div class="row">
+        <div class="col founded-small">
+          <h2 class="founded" style="text-align: start;">Founded on fairness</h2>
+          <p class="founded-details">
+            We put people first.
+            <br><br>
+            Unlike other remote hiring platforms, we don't make any money off upcharges, or take a slice of contractor earnings.
+            <br><br>
+            Why? Because it's the right thing to do, and it's the best thing for your business too.
+            <br><br>
+            We believe that when you treat business relationships with as much care and respect as all other relationships, you both reap the rewards.
+            <br><br>
+            We help create compatible working relationships and remote workplace policies that bring out the best in each other and help businesses boom.
+          </p>
+          <button type="button" class="btn founded-btn mt-4" routerLink="/about">About us
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="col found-sm">
+          <div id="subHeaderAnimated" class="carousel slide carousel-fade founded-fade" data-bs-ride="carousel">
+            <div class="carousel-inner founded-inner">
+              <div class="carousel-item founded-item active" data-bs-interval="3000">
+                <img loading="lazy" src="../../../assets/img/background/vww_photogrida.webp">
+              </div>
+              <div class="carousel-item founded-item" data-bs-interval="3000">
+                <img loading="lazy" src="../../../assets/img/background/vww_photogridb.webp">
+              </div>
+              <div class="carousel-item founded-item" data-bs-interval="3000">
+                <img loading="lazy" src="../../../assets/img/background/vww_photogridc.webp">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#subHeaderAnimated" data-bs-slide="prev" hidden>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" #animatedSubHeader data-bs-target="#subHeaderAnimated" data-bs-slide="next" hidden>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>  
   </section>
 
-  <section class="page-section mt-5" id="services" style="background: #F7F8FC;">
+  <section class="page-section" id="services" style="background: #F7F8FC;">
     <div class="container" data-aos-delay="50" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
       <div class="row mt-5">
         <div class="col">
-          <h2 class="founded" style="text-align: center;">Services</h2>
+          <h2 class="founded" style="text-align: center;">Client Services</h2>
+          <div class="m-auto w-80">
+            <p class="tech-stack-blurb">
+              Maximize Efficiency: Customized Solutions for Effortless Offshore Hiring, International Compliance, and Comprehensive Support Services
+            </p>
+          </div>
         </div>
       </div>
-      <div class="row services">
-        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
+      <div class="row services mt-4">
+        <div class="col mb-3">
           <div class="card first">
             <div class="card-body text-center" routerLink="/employers/info">
               <img loading="lazy" src="../../../assets/img/home/laptop.webp"/>
@@ -279,55 +369,8 @@
       </div>
     </div>
   </section>
-  
-  <section class="page-section about-us mt-5">
-    <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true">
-      <div class="row">
-        <div class="col founded-small">
-          <h2 class="founded" style="text-align: start;">Founded on fairness</h2>
-          <p class="founded-details">
-            We put people first.
-            <br><br>
-            Unlike other remote hiring platforms, we don't make any money off upcharges, or take a slice of contractor earnings.
-            <br><br>
-            Why? Because it's the right thing to do, and it's the best thing for your business too.
-            <br><br>
-            We believe that when you treat business relationships with as much care and respect as all other relationships, you both reap the rewards.
-            <br><br>
-            We help create compatible working relationships and remote workplace policies that bring out the best in each other and help businesses boom.
-          </p>
-          <button type="button" class="btn founded-btn mt-4" routerLink="/about">About us
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-        <div class="col found-sm">
-          <div id="subHeaderAnimated" class="carousel slide carousel-fade founded-fade" data-bs-ride="carousel">
-            <div class="carousel-inner founded-inner">
-              <div class="carousel-item founded-item active" data-bs-interval="3000">
-                <img loading="lazy" src="../../../assets/img/background/vww_photogrida.webp">
-              </div>
-              <div class="carousel-item founded-item" data-bs-interval="3000">
-                <img loading="lazy" src="../../../assets/img/background/vww_photogridb.webp">
-              </div>
-              <div class="carousel-item founded-item" data-bs-interval="3000">
-                <img loading="lazy" src="../../../assets/img/background/vww_photogridc.webp">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#subHeaderAnimated" data-bs-slide="prev" hidden>
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" #animatedSubHeader data-bs-target="#subHeaderAnimated" data-bs-slide="next" hidden>
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </section>
 
-  <section class="tech-stach-section mt-4">
+  <section class="tech-stach-section">
     <div class="container m-auto" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="card banner">
         <div class="card-body">
@@ -356,7 +399,7 @@
     </div>
   </section>
 
-  <section class="page-section mt-4">
+  <!-- <section class="page-section mt-4">
     <div class="container" data-aos-delay="500" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="row">
         <div class="col">
@@ -390,13 +433,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-<section class="page-section mt-4" style="background: #F7F8FC;">
+<section class="page-section">
   <div class="container" data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col">
-        <h2 class="founded" style="text-align: center;">Available Offshore Job Opportunities</h2>
+        <h2 class="founded" style="text-align: center;">Available Offshore Contractor Services</h2>
+        <div class="m-auto w-80">
+          <p class="tech-stack-blurb">
+            Explore Exciting Opportunities. Discover a Wide Range of Offshore Job Openings in Accounting, Customer Support, Marketing, IT, Design, and More.
+          </p>
+        </div>
       </div>
     </div>
     <div class="row jobs">
@@ -596,8 +644,8 @@
 <section class="candidate-section mt-5">
   <div class="container pb-4 text-center" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <div class="row mt-5">
-      <h2 class="founded mt-5">What you had to say</h2>
-      <p class="tech-stack-blurb">We’ve helped so many job seekers secure roles and reach their potential all around the world. </p>
+      <h2 class="founded mt-5">What Contractors had to say</h2>
+      <p class="tech-stack-blurb">Inspiring testimonials from Contractors who thrived with Virtual Work World. Join our platform and unlock your potential.</p>
     </div>
       <ul ngbNav #nav="ngbNav" class="nav-tabs testimonial-container">
           <li [ngbNavItem]="1">

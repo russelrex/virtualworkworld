@@ -266,7 +266,7 @@ a.nav-link.nav-title:hover {
 
 .tech-stack-blurb {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 110%;
     text-align: center;
     letter-spacing: 0.01em;
@@ -351,8 +351,12 @@ a.nav-link.nav-title:hover {
     width: auto;
 }
 
-.client img {
-    width: 100%;
+.client-solutions-section {
+    padding: 0 100px 0 100px;
+}
+
+.w-80 {
+    width: 80%;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -371,7 +375,7 @@ a.nav-link.nav-title:hover {
   
 @media only screen and (max-width: 600px) {
     .intro {
-        font-size: 18px;
+        font-size: 25px;
     }
     
     .services div.card {
@@ -392,7 +396,7 @@ a.nav-link.nav-title:hover {
     }
 
     .tech-stack-blurb {
-        font-size: 18px;
+        font-size: 16px;
         padding: 0 25px 0 25px;
     }
 
@@ -452,6 +456,18 @@ a.nav-link.nav-title:hover {
 
     .animated-header-bg img {
         width: 25%;
+    }
+
+    .client img {
+        width: 100%;
+    }
+
+    .client-solutions-section {
+        padding: 0
+    }
+
+    .founded {
+        font-size: 25px;
     }
 }
 

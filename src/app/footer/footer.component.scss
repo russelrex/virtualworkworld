@@ -24,8 +24,12 @@ p {
   text-align: end;
 }
 
+.section-01 {
+  text-align: start;
+}
+
 @media only screen and (max-width: 600px) {
-  .footer-comm {
+  .footer-comm, .section-01 {
       text-align: center;
   }
 }
