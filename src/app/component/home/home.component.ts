@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import {RouteService} from '../services/route.service';
 import * as Aos from 'aos';
 import { animate, state, style, transition, trigger } from '@angular/animations';
@@ -28,6 +28,33 @@ export class HomeComponent implements OnInit, AfterViewInit {
   hideInitial6: boolean = false;
   listItem: any = [];
   list_order: number = 1;
+  isShow: boolean;
+  topPosToStartShowing = 100;
+  
+  @HostListener('window:scroll')
+  checkScroll() {
+        // window의 scroll top
+    // Both window.pageYOffset and document.documentElement.scrollTop returns the same result in all the cases. window.pageYOffset is not supported below IE 9.
+
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    console.log('[scroll]', scrollPosition);
+    
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+
+  // TODO: Cross browsing
+    gotoTop() {
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    }
   
   constructor(private routeService: RouteService) { }
 
@@ -61,13 +88,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   task(i: number) {
     setTimeout(() => {
-      console.log('===', i);
       this.addItem();
     }, 2000 * i);
 
     
     setTimeout(() => {
-      console.log('===', i);
       this.removeItem();
     }, 4000 * i);
   }
